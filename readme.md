@@ -11,4 +11,7 @@ This project includes my code for my project Exam as a student at Noroff Front-e
 - [ ] Testing
 - [ ] Report writing
 
+## Links and resources
+
+[Trello board](https://trello.com/b/ymuzPleY/project-exam)
 
