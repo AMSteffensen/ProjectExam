@@ -15,7 +15,6 @@ This project includes my code for my project Exam as a student at Noroff Front-e
 
 [Trello board](https://trello.com/b/ymuzPleY/project-exam)
 
-<<<<<<< HEAD
 [Adobe XD Prototype](https://xd.adobe.com/view/15419b99-8765-484d-5605-402cb232db5e-6370/)
 
 
@@ -23,6 +22,3 @@ This project includes my code for my project Exam as a student at Noroff Front-e
 This project is built using SASS.
 To compile and watch sass file, from the sass directory run:
 `sass --watch main.scss:../css/main.css`
-=======
-[Adobe XD Prototype](https://xd.adobe.com/view/15419b99-8765-484d-5605-402cb232db5e-6370)
->>>>>>> c649b3820bfa8aee2588c616d3de69400c780951
