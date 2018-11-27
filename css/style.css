@@ -1,0 +1,12 @@
+:root {
+    --primary: #03256C;
+    --secondary: #2541B2;
+    --dark: #222;
+    --light: #fff;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
