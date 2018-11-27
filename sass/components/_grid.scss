@@ -1,0 +1,29 @@
+/* Mobile first layout */
+.main {
+    display: grid;
+    grid-gap: 1.5em;
+    padding: 1.5em;  
+}
+
+.sidebar {
+    display: inherit;
+    grid-gap: inherit;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 34em) {
+    .sidebar {  
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Widescreens ----------- */
+@media only screen and (min-width : 50em) {
+    .sidebar {  
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+
+    
+
