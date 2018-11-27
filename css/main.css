@@ -1,11 +1,8 @@
-:root {
-  --primary: #03256C;
-  --secondary: #2541B2;
-  --dark: #222;
-  --light: #fff; }
-
-* {
+html {
   box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
 
 html {
   font-family: Arial, Helvetica, sans-serif;
@@ -32,5 +29,52 @@ body {
 @media only screen and (min-width: 50em) {
   .sidebar {
     grid-template-columns: 2fr 1fr; } }
+.button {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 7px 12px;
+  border: 1px solid #D5D5D5;
+  background-image: linear-gradient(#EEE, #DDD);
+  font: 700 13px/18px Helvetica, arial; }
+
+.button--state-success {
+  color: #FFF;
+  background: #569E3D linear-gradient(#79D858, #569E3D) repeat-x;
+  border-color: #4A993E; }
+
+.button--state-danger {
+  color: #900; }
+
+.button--primary {
+  background: #03256C;
+  color: #fff; }
+
+.button--secondary {
+  background: #2541B2;
+  color: #fff; }
+
+/* ------------------------------------
+
+  # PAGE SECTIONS
+
+------------------------------------ */
+/* ------------------------------------
+
+  ## CARDS
+
+------------------------------------ */
+.card {
+  display: grid;
+  /* Typography */ }
+  .card__title {
+    color: #03256C; }
+  .card__subtitle {
+    color: #2541B2; }
+
+.colour--box-name {
+  background: black; }
+
+.colour--box-hex {
+  background: black; }
 
 /*# sourceMappingURL=main.css.map */
