@@ -1,1 +1,41 @@
-// page sections
+/* ------------------------------------
+
+  # SECTIONS
+
+------------------------------------ */
+
+
+
+
+
+
+
+
+/* ------------------------------------
+
+  ## CARDS
+
+------------------------------------ */
+.card {
+    display: grid;
+
+    /* Typography */
+    &__title {
+
+        color: $primary-font-color;
+    }
+
+    &__subtitle {
+
+        color: $secondary-font-color;
+
+    }
+}
+
+.colour--box-name {
+    background: black;
+}
+
+.colour--box-hex {
+    background: black;
+}

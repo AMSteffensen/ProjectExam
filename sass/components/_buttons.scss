@@ -1,8 +1,11 @@
-// buttons
+/* ------------------------------------
 
+  ## BUTTONS
+
+------------------------------------ */
 .button {
 	display: inline-block;
-	border-radius: 3px;
+	border-radius: 5px;
 	padding: 7px 12px;
 	border: 1px solid #D5D5D5;
 	background-image: linear-gradient(#EEE, #DDD);
@@ -15,4 +18,14 @@
 }
 .button--state-danger {
 	color: #900;
+}
+
+.button--primary {
+    background: $primary-color;
+    color: $secondary-font-color;
+}
+
+.button--secondary {
+    background: $secondary-color;
+    color: $secondary-font-color;
 }

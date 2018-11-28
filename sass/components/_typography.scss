@@ -1,8 +1,11 @@
-// typography// Grid layout
+/* ------------------------------------
 
+  ## TYPOGRAPHY
+
+------------------------------------ */
 html {
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--dark);
+    color: $primary-font-color;
 }
 
 body {

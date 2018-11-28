@@ -1,27 +1,46 @@
-/* Mobile first layout */
-.main {
-    display: grid;
-    grid-gap: 1.5em;
-    padding: 1.5em;  
-}
+/* ------------------------------------
 
-.sidebar {
-    display: inherit;
-    grid-gap: inherit;
+  ## GRIDS
+
+------------------------------------ */
+
+// if no grid support, add page width.
+@supports not (display: grid) {
+    .site {
+        max-width: 50em;
+        margin: 0 auto;
+    }
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 34em) {
-    .sidebar {  
-        grid-template-columns: 1fr 1fr;
+    @supports (display: grid) {
+        .site {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "header main"
+                           "header sidebar"
+                           "header footer";
+        }
+        .site-header {
+            grid-area: header;
+        }
+        .site-main {
+            grid-area: main;
+        }
+        .widget-area {
+            grid-area: sidebar;
+        }
+        .site-footer {
+            grid-area: footer;
+        }
     }
 }
 
 /* Widescreens ----------- */
 @media only screen and (min-width : 50em) {
-    .sidebar {  
-        grid-template-columns: 2fr 1fr;
-    }
+   
 }
 
 

@@ -1,3 +1,9 @@
+## Goal
+Build a Microsite promoting space technology for SpaceX
+
+## Target Audience
+
+To get a better sense of what our target audience for the application is, we need to do some research.
 
 # Design Checklist
 ## Color
@@ -28,3 +34,4 @@
 ## Calls to Action
 
 - [ ] Important information is highlighted in order to attract user interaction
+
