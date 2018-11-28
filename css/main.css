@@ -1,3 +1,13 @@
+/* ------------------------------------
+
+  ## COLOURS
+
+------------------------------------ */
+/* ------------------------------------
+
+  ## MIXINS
+
+------------------------------------ */
 html {
   box-sizing: border-box; }
 
@@ -5,30 +15,66 @@ html {
   box-sizing: inherit; }
 
 html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto; }
+
+/* ------------------------------------
+
+  ## TYPOGRAPHY
+
+------------------------------------ */
+html {
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--dark); }
+  color: #222222; }
 
 body {
   line-height: 1.2em; }
 
-/* Mobile first layout */
-.main {
-  display: grid;
-  grid-gap: 1.5em;
-  padding: 1.5em; }
+/* ------------------------------------
 
-.sidebar {
-  display: inherit;
-  grid-gap: inherit; }
+  ## GRIDS
 
+------------------------------------ */
+@supports not (display: grid) {
+  .site {
+    max-width: 50em;
+    margin: 0 auto; } }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 34em) {
-  .sidebar {
-    grid-template-columns: 1fr 1fr; } }
+  @supports (display: grid) {
+    .site {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "header main" "header sidebar" "header footer"; }
+
+    .site-header {
+      grid-area: header; }
+
+    .site-main {
+      grid-area: main; }
+
+    .widget-area {
+      grid-area: sidebar; }
+
+    .site-footer {
+      grid-area: footer; } } }
 /* Widescreens ----------- */
-@media only screen and (min-width: 50em) {
-  .sidebar {
-    grid-template-columns: 2fr 1fr; } }
+/* ------------------------------------
+
+  ## BUTTONS
+
+------------------------------------ */
 .button {
   display: inline-block;
   border-radius: 5px;
@@ -55,7 +101,12 @@ body {
 
 /* ------------------------------------
 
-  # PAGE SECTIONS
+  ## NAVIGATION
+
+------------------------------------ */
+/* ------------------------------------
+
+  # SECTIONS
 
 ------------------------------------ */
 /* ------------------------------------
@@ -67,9 +118,9 @@ body {
   display: grid;
   /* Typography */ }
   .card__title {
-    color: #03256C; }
+    color: #222222; }
   .card__subtitle {
-    color: #2541B2; }
+    color: #fff; }
 
 .colour--box-name {
   background: black; }
