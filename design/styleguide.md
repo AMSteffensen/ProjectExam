@@ -28,3 +28,9 @@
 .button { }
 .button--green { }
 ```
+
+
+## HTML Valdidation
+- [ ] Valdidate HTML/CSS
+## JavaScript valdidation
+- [ ] Valdidate JS, use babel  to transpile written ES6 code into ES5.

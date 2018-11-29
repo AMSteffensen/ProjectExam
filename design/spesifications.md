@@ -10,7 +10,6 @@
 - [X] Seperate folders for images, css, js
 - [X] 4 HTML pages, root folder
 
-
 ## CONTENT PLANNING
 1. Homepage
     1. Contain a Video showing Space Rocket Launch
