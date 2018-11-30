@@ -53,22 +53,7 @@ body {
 @media only screen and (min-width: 34em) {
   @supports (display: grid) {
     .site {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "header main" "header sidebar" "header footer"; }
-
-    .site-header {
-      grid-area: header; }
-
-    .site-main {
-      grid-area: main; }
-
-    .widget-area {
-      grid-area: sidebar; }
-
-    .site-footer {
-      grid-area: footer; } } }
+      display: grid; } } }
 /* Widescreens ----------- */
 /* ------------------------------------
 

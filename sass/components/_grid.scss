@@ -3,18 +3,6 @@
   ## GRIDS
 
 ------------------------------------ */
-.site-header {
-    grid-area: header;
-}
-.site-main {
-    grid-area: main;
-}
-.widget-area {
-    grid-area: sidebar;
-}
-.site-footer {
-    grid-area: footer;
-}
 
 // if no grid support, add page width.
 @supports not (display: grid) {
@@ -29,11 +17,9 @@
     @supports (display: grid) {
         .site {
 			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas: "header header"
-                           "sidebar main sidebar"
-                           "footer footer footer";
+            
         }
+       
         
     }
 }
