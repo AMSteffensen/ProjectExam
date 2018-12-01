@@ -113,4 +113,16 @@ body {
 .colour--box-hex {
   background: black; }
 
+/* ------------------------------------
+
+  ## calendar
+
+------------------------------------ */
+.calendar {
+  display: flex;
+  align-items: center; }
+
+.calendar > label {
+  display: flex; }
+
 /*# sourceMappingURL=main.css.map */

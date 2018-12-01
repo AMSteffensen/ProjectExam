@@ -18,6 +18,7 @@
 <body>
     <div id="page" class="site">
         <header id="masthead" class="site-header" role="banner">
+            <!-- NAVIGATION -->
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -88,6 +89,15 @@
                 </div>
             </section>
 
+            <section class="section section-calendar">
+                <form>
+                    <div class="calendar">
+                        <label for="lauch">Choose your date:</label>
+                        <input type="date" id="date" name="date" min="2018-12-01" max="2020-04-30" required>
+                    </div>
+                </form>
+            </section>
+
             <section class="section section-form">
                 <h3>Forms</h3>
                 <fieldset>
@@ -95,6 +105,11 @@
                     <label for="first-name">First Name</label>
                     <input id="first-name" type="text" name="texfield">
                 </fieldset>
+            </section>
+
+            <section class="section section-video">
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/vr_C6LQ7mHc">
+                </iframe>
             </section>
 
             <aside class="aside aside-menu">
@@ -107,6 +122,19 @@
                         <li>Form</li>
                     </ul>
                 </nav>
+            </aside>
+
+            <aside class="map">
+                <p>Hawthorne, California, USA</p>
+                <p><span class="contact">Telephone</span> 310-363-6000</p>
+                SPACEX HEADQUARTERS
+                Rocket Road
+                Hawthorne, California
+                MEDIA INQUIRIES
+                media@spacex.com
+
+                SALES INQUIRIES
+                sales@spacex.com
             </aside>
         </main>
         <footer class="site-footer" role="contentinfo">

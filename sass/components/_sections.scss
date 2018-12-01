@@ -40,3 +40,18 @@
 }
 
 
+
+/* ------------------------------------
+
+  ## calendar
+
+------------------------------------ */
+
+.calendar {
+    display: flex;
+    align-items: center;
+}
+
+.calendar > label {
+    display: flex;
+}
