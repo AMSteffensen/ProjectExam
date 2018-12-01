@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/ico.png" type="image/gif" sizes="16x16">
     <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/leaflet.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
@@ -125,16 +126,25 @@
             </aside>
 
             <aside class="map">
+
+                <!-- Leaflet test -->
+                <div id="mapid"></div>
+
+
+
                 <p>Hawthorne, California, USA</p>
                 <p><span class="contact">Telephone</span> 310-363-6000</p>
-                SPACEX HEADQUARTERS
-                Rocket Road
-                Hawthorne, California
-                MEDIA INQUIRIES
-                media@spacex.com
+                <h2>SPACEX HEADQUARTERS</h2>
 
-                SALES INQUIRIES
-                sales@spacex.com
+                <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY
+    &q=Space+Needle,Seattle+WA"
+                    allowfullscreen>
+                </iframe>
+                <h3>Media Inquries</h3>
+                <p><span class="contact">Email</span> <a href="mailto:media@spacex.com">media@spacex.com</a></p>
+                <h3>Sales Inquuries</h3>
+                <p><span class="contact">Email</span> <a href="mailto:sales@spacex.com">sales@spacex.com</a></p>
+
             </aside>
         </main>
         <footer class="site-footer" role="contentinfo">
@@ -142,6 +152,7 @@
         </footer>
     </div><!-- end page wrapper -->
     <!-- Javascrpits -->
+    <script src="scripts/leaflet.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 
