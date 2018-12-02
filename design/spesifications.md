@@ -1,10 +1,10 @@
 # CorteX
 ## Website Requirements
 
-- [ ] Uses consistent and semantic code
-- [ ] Cross Browser compatible & Respnsive
-- [ ] Colors and design principles
-- [ ] Easily readable
+- [X] Uses consistent and semantic code
+- [X] Cross Browser compatible & Respnsive
+- [X] Colors and design principles
+- [X] Easily readable
 
 ## Structure
 - [X] Seperate folders for images, css, js
