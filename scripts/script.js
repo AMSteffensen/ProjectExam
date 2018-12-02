@@ -22,6 +22,16 @@ var dateControl = document.querySelector('input[type="date"]');
 dateControl.value = '2017-06-01';
 
 
-// Map
+// on pageload run JS
+document.addEventListener("DOMContentLoaded", function () {
 
-var headquarters = L.map('map').setView([51.505, -0.09], 13);
+    var sections = document.querySelectorAll(".section");
+    var navigation = document.querySelector("nav");
+    var links = navigation.querySelectorAll("a");
+
+    
+
+    // Map
+    var headquarters = L.map('map').setView([51.505, -0.09], 13);
+
+}, false);

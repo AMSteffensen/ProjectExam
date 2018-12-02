@@ -4,10 +4,13 @@
 
 ------------------------------------ */
 html {
-    font-family: Arial, Helvetica, sans-serif;
     color: $primary-font-color;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
 }
 
 body {
-    line-height: 1.2em;
+    color: $body-color;
+    font: $body-font-size $body-font-family;
+    background: $body-background;
 }

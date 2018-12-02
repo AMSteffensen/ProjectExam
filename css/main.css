@@ -1,6 +1,6 @@
 /* ------------------------------------
 
-  ## COLOURS
+  ## VARIABLES
 
 ------------------------------------ */
 /* ------------------------------------
@@ -34,11 +34,14 @@ img {
 
 ------------------------------------ */
 html {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #222222; }
+  color: #222222;
+  font-size: 16px;
+  line-height: 1.6em; }
 
 body {
-  line-height: 1.2em; }
+  color: #111;
+  font: 1rem "Work Sans", sans-serif;
+  background: #fff; }
 
 /* ------------------------------------
 
@@ -49,12 +52,30 @@ body {
   .site {
     max-width: 50em;
     margin: 0 auto; } }
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 34em) {
+/* Widescreens ----------- */
+@media screen and (min-width: 600px) {
   @supports (display: grid) {
     .site {
-      display: grid; } } }
-/* Widescreens ----------- */
+      display: grid;
+      grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
+      grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto); }
+
+    .site-header,
+    .site-footer {
+      grid-column: span 8; }
+
+    .site-main {
+      grid-column: 2/6; }
+
+    .aside {
+      grid-column: 6/8; }
+
+    .map {
+      grid-column: 2/5;
+      grid-row: 3/4; }
+
+    .twin:last-of-type {
+      grid-column: 5/8; } } }
 /* ------------------------------------
 
   ## BUTTONS
@@ -77,11 +98,11 @@ body {
   color: #900; }
 
 .button--primary {
-  background: #03256C;
+  background: #03256c;
   color: #fff; }
 
 .button--secondary {
-  background: #2541B2;
+  background: #2541b2;
   color: #fff; }
 
 /* ------------------------------------
@@ -89,40 +110,46 @@ body {
   ## NAVIGATION
 
 ------------------------------------ */
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 3em; }
+
+.nav__item {
+  flex-grow: 1; }
+
+.nav__link {
+  font-size: 1.5rem;
+  display: block;
+  padding: 1em;
+  text-align: center;
+  color: #fff; }
+
 /* ------------------------------------
 
   # SECTIONS
 
 ------------------------------------ */
-/* ------------------------------------
+.site-header {
+  background: #03256c; }
 
-  ## CARDS
-
------------------------------------- */
 .card {
-  display: grid;
-  /* Typography */ }
-  .card__title {
-    color: #222222; }
-  .card__subtitle {
-    color: #fff; }
+  max-width: 360px;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0.3rem; }
 
-.colour--box-name {
-  background: black; }
-
-.colour--box-hex {
-  background: black; }
-
-/* ------------------------------------
-
-  ## calendar
-
------------------------------------- */
-.calendar {
-  display: flex;
-  align-items: center; }
-
-.calendar > label {
-  display: flex; }
+pre code {
+  background-color: #333;
+  font-family: monospace;
+  background-color: #333;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,54 +4,25 @@
 
 ------------------------------------ */
 
+.site-header {
+    background: $primary-color;
+  }
+  
+  .card {
+    max-width: 360px;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 0.3rem;
+  }
+  
+  pre code {
+    background-color: #333;
+    font-family: monospace;
+    background-color: #333;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    color: white;
+  }
 
-
-
-
-
-
-/* ------------------------------------
-
-  ## CARDS
-
------------------------------------- */
-.card {
-    display: grid;
-
-    /* Typography */
-    &__title {
-
-        color: $primary-font-color;
-    }
-
-    &__subtitle {
-
-        color: $secondary-font-color;
-
-    }
-}
-
-.colour--box-name {
-    background: black;
-}
-
-.colour--box-hex {
-    background: black;
-}
-
-
-
-/* ------------------------------------
-
-  ## calendar
-
------------------------------------- */
-
-.calendar {
-    display: flex;
-    align-items: center;
-}
-
-.calendar > label {
-    display: flex;
-}
