@@ -6,11 +6,13 @@
 html {
     color: $primary-font-color;
     font-size: $base-font-size;
-    line-height: $base-line-height;
+    
 }
 
 body {
     color: $body-color;
     font: $body-font-size $body-font-family;
     background: $body-background;
+    $base-font-weight: 400;
+    line-height: $base-line-height;
 }
