@@ -38,12 +38,6 @@ function displayLatestLaunches(launch) {
         </div>
         `
         
-        /* '<div class="card card--light">' 
-        '<h3>' + data.mission_name + '</h3>' +
-		'<p>' + data.rocket.rocket_name + '</p>' +
-		'<a href=' + data.links.video_link + '>View Launch Video' + '</a>' +
-        '<a href=' + data.links.article_link + '>Learn More' + '</a> +
-        </div>''; */
 
 	document.getElementById('latest-launch').innerHTML = output;
 }
