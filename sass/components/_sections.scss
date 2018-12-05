@@ -53,6 +53,7 @@ label input {
 .form-control {
   $form-color: #ede4e4;
   background-color: $form-color;
+  clear: both;
 
   &--text {
     color: $body-color;

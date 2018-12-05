@@ -36,10 +36,16 @@
     <main id="content" class="site-main" role="main">
       <section>
         <h1>Contact</h1>
+        <div class="ui-error--message">
+
+        </div>
+        <div class="ui-success--message">
+          Form Validation Successful!
+        </div>
         <div role="form" aria-labelledby="contact">
           <fieldset>
             <legend id="contact">
-              <form action="">
+              <form action="" id="form">
                 <ol>
                   <li class="form-control form-control--text">
                     <!-- Name -->
@@ -64,13 +70,17 @@
                     <input type="tel" name="tel" id="tel" placeholder="ex. 12-456-789"/>
                   </li>
                   <li class="form-control form-control--select">
-                    <label for="subject">Purpose of Your Message</label>
-                    <select name="subject" id="subject" required>
-                      <option>Question</option>
-                      <option>Complaint</option>
-                      <option>Website error/bug</option>
-                      <option>Other</option>
-                    </select>
+                    <fieldset>
+                      <legend id="select_purpose">
+                          <label for="subject">Purpose of Your Message</label>
+                          <select name="subject" id="subject" aria-labelledby="select_purpose purpose_label" required>
+                            <option>Question</option>
+                            <option>Complaint</option>
+                            <option>Website error/bug</option>
+                            <option>Other</option>
+                          </select>
+                      </legend>
+                    </fieldset>
                   </li>
                   <!-- Message-->
                   <li class="textarea">

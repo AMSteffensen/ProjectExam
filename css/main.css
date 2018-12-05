@@ -159,8 +159,13 @@ input {
 label input {
   margin: 1em; }
 
+input:invalid {
+  border-color: #900;
+  background-color: #FDD; }
+
 .form-control {
-  background-color: #ede4e4; }
+  background-color: #ede4e4;
+  clear: both; }
   .form-control--text {
     color: #111;
     font-weight: bold; }
