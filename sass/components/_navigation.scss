@@ -3,16 +3,46 @@
   ## NAVIGATION
 
 ------------------------------------ */
+
 .nav {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
   list-style-type: none;
-  padding: 0;
-  margin-bottom: 3em; 
+  position: relative;
+  display: none;
 
+  nav {
+    display: none;
+    width: 100%;
+    list-style: none;
+  }
+
+  .nav__item {
+    a {
+      display: block;
+      padding: 1em;
+      background: $secondary-color;
+      color: $secondary-font-color;
+      text-decoration: none;
+      border-right: 1px solid $primary-color--darker;
+      &:hover {
+        background: $secondary-color--darker;
+      }
+    }
+  } // li
+
+  @media (min-width: 48em) {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      position: relative;
+      text-align: center;
+      flex: 1;
+    }
+    #toggle {
+      display:none;
+    }
+  }
 }
-
 
 .nav__item {
   flex-grow: 1;

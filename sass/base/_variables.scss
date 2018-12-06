@@ -1,5 +1,8 @@
 $primary-color: #03256c;
 $secondary-color: #2541b2;
+$primary-color--darker: darken($primary-color,5%);
+$secondary-color--darker: darken($secondary-color,15%);
+
 $primary-font-color: #222222;
 $secondary-font-color: #fff;
 
@@ -15,3 +18,4 @@ $body-color: #111;
 $font-size-large: 2.25rem;
 $font-size-medium: 1.5rem;
 $font-size-small: 1rem;
+

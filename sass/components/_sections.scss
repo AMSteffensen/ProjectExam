@@ -3,39 +3,47 @@
   # SECTIONS
 
 ------------------------------------ */
-body {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-// Header
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0 100px;
-}
-
-header .logo {
-  color: #fff;
-  height: 50px;
-  line-height: 50px;
-  font-size: 24px;
-  float: left;
-}
-
 .site {
-  margin: 0 auto;
-  box-shadow: 0px 0px 5px $primary-color;
+  display: flex;
+  flex-wrap: wrap;
 }
-
-
-
 .site-header {
   background: $primary-color;
+  width: 100%;
+}
+.site-main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+// HEADER
+.site-header {
+  
+  padding: 2em;
+  .logo {
+    color: #fff;
+  }
+
+  
+/* 
+  a {
+    color: inherit;
+  }
+
+  
+  button {
+    background: url('../img/hamburger.svg');
+    background-repeat: no-repeat;
+    float: right;
+  } */
+}
+
+
+// CARDS
 .card {
   max-width: 360px;
   margin: 1rem;
