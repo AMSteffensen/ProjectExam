@@ -5,82 +5,97 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <meta name="description" content="rocket launch space technology adventures exploration ">
     <title>Rocket launches for rocket lovers!</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/ico.png" type="image/gif" sizes="16x16">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
 
 <body>
+    <!-- Wrapper -->
     <div id="page" class="site">
-        <header id="masthead" class="site-header" role="banner">
-            <div class="logo">
-                <a href="#">Logo</a>
+        <!-- Main-->
+        <div id="main">
+            <div class="inner">
+                <!-- Header -->
+                <header id="masthead" class="site-header" role="banner">
+                    <a class="logo" href="#">SpaceRocket</a>
+                    <!-- NAVIGATION -->
+                    <nav id="main-navigation" role="navigation">
+                        <!-- Mobile Menu -->
+                        <button aria-expanded="false" id="toggle">Menu</button>
+                        <ul id="menu" class="nav">
+                            <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                            <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                            <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                            <li class="nav__item"><a href="news.html" class="nav__link">News</a></li>
+                            <li class="nav__item"><a href="gallery.html" class="nav__link">Gallery</a></li>
+                            <li class="nav__item"><a href="launches.html" class="nav__link">Launches</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <!-- Banner -->
+                <section id="banner">
+
+                </section>
+                <main id="content" class="site-main" role="main">
+                    <section>
+                        <h1>Home</h1>
+
+
+                        <button class="button button--primary">
+                            Love rockets?
+                        </button>
+
+                        <div class="launches">
+
+                        </div>
+
+                    </section>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/vr_C6LQ7mHc"></iframe>
+                    <h2>Check out other launches</h2>
+                    <form>
+                        <div class="calendar">
+                            <label for="lauch">Choose your date:</label>
+                            <input type="date" id="date" name="date" min="2018-12-01" max="2020-04-30" required>
+                        </div>
+                    </form>
+                    <h3>Card Dark</h3>
+                    <figure>
+                        <img alt="placeholder" src="https://picsum.photos/200/300" class="card__image" />
+                        <figcation>
+                            <h3 class="card__title">
+                                Heading
+                            </h3>
+                            <p class="card__text">Lorem ipsum dolor sit amet.</p>
+                        </figcation>
+                    </figure>
             </div>
-            <!-- NAVIGATION -->
-            <nav id="main-navigation" role="navigation">
-                 <!-- Mobile Menu -->
-                <ul id="menu" class="nav">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
-                    <li class="nav__item"><a href="news.html" class="nav__link">News</a></li>
-                    <li class="nav__item"><a href="gallery.html" class="nav__link">Gallery</a></li>
-                    <li class="nav__item"><a href="launches.html" class="nav__link">Launches</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <main id="content" class="site-main" role="main">
-            <section>
-                <h1>Home</h1>
 
-                </button>
-                <button class="button button--primary">
-                    Love rockets?
-                </button>
 
-                <div class="launches">
 
-                </div>
-                
-            </section>
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/vr_C6LQ7mHc"></iframe>
-            <h2>Check out other launches</h2>
-            <form>
-                <div class="calendar">
-                    <label for="lauch">Choose your date:</label>
-                    <input type="date" id="date" name="date" min="2018-12-01" max="2020-04-30" required>
-                </div>
-            </form>
-            <h3>Card Dark</h3>
-            <figure>
-                <img alt="placeholder" src="https://picsum.photos/200/300" class="card__image" />
-                <figcation>
-                    <h3 class="card__title">
-                        Heading
-                    </h3>
-                    <p class="card__text">Lorem ipsum dolor sit amet.</p>
-                </figcation>
-            </figure>
+
+
+
+
+            </main>
+            <footer class="site-footer" role="contentinfo">
+                Copyright Andreas Steffensen 2018
+            </footer>
+        </div>
+
     </div>
+    <!-- Sidebar -->
+    <div id="sidebar" class="inactive">
 
-   
-
-
-
-
-
-
-    </main>
-    <footer class="site-footer" role="contentinfo">
-        Copyright Andreas Steffensen 2018
-    </footer>
+    </div>
     </div><!-- end page wrapper -->
     <!-- Javascrpits -->
     <script src="scripts/script.js"></script>

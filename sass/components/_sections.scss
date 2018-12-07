@@ -3,9 +3,12 @@
   # SECTIONS
 
 ------------------------------------ */
+//GENERAL STYLES
 .site {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row-reverse;
+  min-height: 100vh;
 }
 .site-header {
   background: $primary-color;
@@ -20,26 +23,10 @@
   flex-direction: column;
 }
 
-// HEADER
-.site-header {
-  
-  padding: 2em;
-  .logo {
-    color: #fff;
-  }
-
-  
-/* 
-  a {
-    color: inherit;
-  }
-
-  
-  button {
-    background: url('../img/hamburger.svg');
-    background-repeat: no-repeat;
-    float: right;
-  } */
+.site-header .site-main {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
 }
 
 
@@ -61,6 +48,44 @@ pre code {
   padding: 20px;
   color: white;
 }
+
+// HEADER
+.site-header {
+  width: 100%;
+  height: 100px;
+  top: 0px;
+  padding: 2em;
+  logo {
+    color: #fff;
+  }
+
+  button {
+    float: right;
+    padding: 20px;
+    top: 0px;
+  }
+
+  
+/* 
+  a {
+    color: inherit;
+  }
+
+  
+  button {
+    background: url('../img/hamburger.svg');
+    background-repeat: no-repeat;
+    float: right;
+  } */
+}
+
+/* ------------------------------------
+
+# HOME PAGE
+
+------------------------------------ */
+
+
 
 /* ------------------------------------
 

@@ -8,12 +8,9 @@
   list-style-type: none;
   position: relative;
   display: none;
+  width: 100%;
+  list-style: none;
 
-  nav {
-    display: none;
-    width: 100%;
-    list-style: none;
-  }
 
   .nav__item {
     a {
@@ -43,7 +40,7 @@
     }
   }
 }
-
+/* 
 .nav__item {
   flex-grow: 1;
 }
@@ -54,4 +51,4 @@
   padding: 1em;
   text-align: center;
   color: $secondary-font-color;
-}
+} */
