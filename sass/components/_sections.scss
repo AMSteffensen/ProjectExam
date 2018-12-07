@@ -3,30 +3,78 @@
   # SECTIONS
 
 ------------------------------------ */
-//GENERAL STYLES
-.site {
+// Flex layout
+#wrapper {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row-reverse;
   min-height: 100vh;
 }
-.site-header {
-  background: $primary-color;
-  width: 100%;
-}
-.site-main {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
-.site-header .site-main {
+#main {
   flex-grow: 1;
   flex-shrink: 1;
   width: 100%;
+
+  >.inner {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    // vertical-align inline and table-cell elements.
+    vertical-align: baseline;
+  }
+}
+
+#masthead {
+  display: flex;
+  color: $secondary-font-color;
+}
+
+// HEADER
+.site-header {
+  background: $primary-color;
+  border-bottom: solid 5px #bf4343;
+  padding: 2em;
+}
+
+#masthead .logo {
+  color: inherit;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+#masthead .icons {
+  text-align: right;
+  flex: 1;
+  margin-bottom: 0;
+}
+
+ul.icons {
+  list-style: none;
+}
+
+ul.icons li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+}
+
+ul.icons li .fab {
+  color: inherit;
+}
+
+.fab {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+
+.fab > .label {
+  display: none;
+}
+
+ul.icons li:last-child {
+  padding-right: 0;
 }
 
 
@@ -49,35 +97,7 @@ pre code {
   color: white;
 }
 
-// HEADER
-.site-header {
-  width: 100%;
-  height: 100px;
-  top: 0px;
-  padding: 2em;
-  logo {
-    color: #fff;
-  }
 
-  button {
-    float: right;
-    padding: 20px;
-    top: 0px;
-  }
-
-  
-/* 
-  a {
-    color: inherit;
-  }
-
-  
-  button {
-    background: url('../img/hamburger.svg');
-    background-repeat: no-repeat;
-    float: right;
-  } */
-}
 
 /* ------------------------------------
 
