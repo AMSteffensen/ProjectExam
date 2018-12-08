@@ -28,21 +28,21 @@
                     <a class="logo" href="index.html">SpaceRocket</a>
                     <!-- ICONS -->
                     <div class="header-nav inactive">
-                            <nav id="main-navigation" role="navigation">
-                                    <!-- Mobile Menu -->
-                                    <label for="menu-toggle"><i class="fas fa-bars"></i></label>
-                                    <input type="checkbox" id="menu-toggle"/>
-                                    <ul id="menu" class="nav">
-                                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
-                                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
-                                        <li class="nav__item"><a href="news.html" class="nav__link">News</a></li>
-                                        <li class="nav__item"><a href="gallery.html" class="nav__link">Gallery</a></li>
-                                        <li class="nav__item"><a href="launches.html" class="nav__link">Launches</a></li>
-                                    </ul>
-                                </nav>
-        
-                                
+                        <nav id="main-navigation" role="navigation">
+                            <!-- Mobile Menu -->
+                            <label for="menu-toggle"><i class="fas fa-bars"></i></label>
+                            <input type="checkbox" id="menu-toggle" />
+                            <ul id="menu" class="nav">
+                                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                                <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                                <li class="nav__item"><a href="news.html" class="nav__link">News</a></li>
+                                <li class="nav__item"><a href="gallery.html" class="nav__link">Gallery</a></li>
+                                <li class="nav__item"><a href="launches.html" class="nav__link">Launches</a></li>
+                            </ul>
+                        </nav>
+
+
                     </div>
                 </header>
                 <!-- Banner -->
@@ -55,9 +55,13 @@
                             nesciunt nobis quia excepturi voluptatem esse ad laboriosam optio, sed earum dignissimos
                             atque?</p>
                         <ul class="actions">
-                            <li>
-                                <button class="button button--primary">Love rockets?</button>
-                            </li>
+                            <label for="date">Check for launches: </label>
+
+                            <input type="date" id="launch-date" name="trip-start" value="2018-07-22" min="2009-01-01"
+                                max="2018-12-31">
+                            <li><button class="button button--primary" id="getLaunches">Launch! <i class="fa fa-rocket"
+                                        aria-hidden="true"></i></button></li>
+
                         </ul>
                     </div>
                     <span class="image object">
@@ -66,11 +70,17 @@
                 </section>
                 <main id="content" class="site-main" role="main">
                     <section>
-                        <div class="launches">
+                        <div id="launches">
+
                         </div>
                     </section>
                     <section>
                         <iframe width="420" height="315" src="https://www.youtube.com/embed/vr_C6LQ7mHc"></iframe>
+                    </section>
+                    <section>
+                        <div class="rocketlist">
+
+                        </div>
                     </section>
                 </main>
             </div> <!-- Inner End-->
@@ -94,13 +104,13 @@
             </aside>
 
             <footer class="site-footer" role="contentinfo">
-                    <ul class="icons">
-                            <li><a href="#" class="fab fa-twitter"><span class="label">Twitter</span></a></li>
-                            <li><a href="#" class="fab fa-facebook"><span class="label">Facebook</span></a></li>
-                            <li><a href="#" class="fab fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-                            <li><a href="#" class="fab fa-instagram"><span class="label">Instagram</span></a></li>
-                            <li><a href="#" class="fab fa-medium"><span class="label">Medium</span></a></li>
-                        </ul>
+                <ul class="icons">
+                    <li><a href="#" class="fab fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="fab fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="fab fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                    <li><a href="#" class="fab fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="fab fa-medium"><span class="label">Medium</span></a></li>
+                </ul>
                 Copyright Andreas Steffensen 2018
             </footer>
         </div> <!-- Main end -->

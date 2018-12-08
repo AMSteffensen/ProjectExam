@@ -14,7 +14,7 @@ function loadLastest() {
 }
 
 function loadUpcoming() {
-	fetch("https://api.spacexdata.com/v2/launches/upcoming")
+	fetch("https://api.spacexdata.com/v3/launches/upcoming")
 		.then(function (result) {
 			return result.json();
 		})
