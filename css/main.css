@@ -33,39 +33,56 @@ body {
   background: #fff;
   line-height: 1.6em; }
 
+p {
+  margin: 0 0 2em 0; }
+
 /* ------------------------------------
 
   ## GRIDS
 
 ------------------------------------ */
+/* // if no grid support, add page width.
 @supports not (display: grid) {
-  .site {
-    max-width: 50em;
-    margin: 0 auto; } }
-/* Widescreens ----------- */
-@media screen and (min-width: 600px) {
-  @supports (display: grid) {
     .site {
-      display: grid;
-      grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
-      grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto); }
+        max-width: 50em;
+        margin: 0 auto;
+    }
+}
 
-    .site-header,
-    .site-footer {
-      grid-column: span 8; }
-
-    .site-main {
-      grid-column: 2/6; }
-
-    .aside {
-      grid-column: 6/8; }
-
-    .map {
-      grid-column: 2/5;
-      grid-row: 3/4; }
-
-    .twin:last-of-type {
-      grid-column: 5/8; } } }
+/* Widescreens ----------- */
+/* @media screen and (min-width: 600px) {
+    @supports (display: grid) {
+      .site {
+        display: grid;
+        grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
+        grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
+      }
+  
+      .site-header,
+      .site-footer {
+        grid-column: span 8;
+      }
+  
+      .site-main {
+        grid-column: 2/6;
+      }
+  
+      .aside {
+        grid-column: 6/8;
+      }
+  
+      .map {
+        grid-column: 2/5;
+        grid-row: 3/4;
+      }
+  
+      .twin:last-of-type {
+        grid-column: 5/8;
+      }
+    }
+  }
+  
+     */
 /* ------------------------------------
 
   ## BUTTONS
@@ -100,32 +117,41 @@ body {
   ## NAVIGATION
 
 ------------------------------------ */
-.nav {
+/* .nav {
   list-style-type: none;
   position: relative;
   display: none;
   width: 100%;
-  list-style: none; }
-  .nav .nav__item a {
-    display: block;
-    padding: 1em;
-    background: #2541b2;
-    color: #fff;
-    text-decoration: none;
-    border-right: 1px solid #021d53; }
-    .nav .nav__item a:hover {
-      background: #182a73; }
-  @media (min-width: 48em) {
-    .nav {
-      display: flex;
-      flex-direction: row; }
-      .nav li {
-        position: relative;
-        text-align: center;
-        flex: 1; }
-      .nav #toggle {
-        display: none; } }
+  list-style: none;
 
+
+  .nav__item {
+    a {
+      display: block;
+      padding: 1em;
+      background: $secondary-color;
+      color: $secondary-font-color;
+      text-decoration: none;
+      border-right: 1px solid $primary-color--darker;
+      &:hover {
+        background: $secondary-color--darker;
+      }
+    }
+  } // li
+
+  @media (min-width: 48em) {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      position: relative;
+      text-align: center;
+      flex: 1;
+    }
+    #toggle {
+      display:none;
+    }
+  } */
 /* 
 .nav__item {
   flex-grow: 1;
@@ -157,6 +183,9 @@ body {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline; }
+  @media screen and (max-width: 736px) {
+    #main > .inner > section {
+      padding: 3em 0 1em 0; } }
 
 #masthead {
   display: flex;
@@ -199,6 +228,44 @@ ul.icons li .fab {
 
 ul.icons li:last-child {
   padding-right: 0; }
+
+#main > .inner > section:first-type {
+  border-top: 0; }
+
+#banner {
+  display: flex;
+  flex-direction: column-reverse; }
+
+#banner .content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 50%; }
+
+ul.actions {
+  display: flex;
+  padding-left: 0; }
+
+ul.actions li {
+  padding: 0 0 0 1em;
+  vertical-align: middle; }
+
+#banner .image {
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: block;
+  margin: 0 0 2em 4em;
+  width: 50%; }
+
+.image {
+  border-radius: 0.375em;
+  border: 0;
+  display: inline-block;
+  position: relative; }
+
+#banner .image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%; }
 
 .card {
   max-width: 360px;
@@ -252,5 +319,30 @@ label input {
   .form-control--checkbox {
     color: #111;
     font-size: 1.5rem; }
+
+/* ------------------------------------
+
+# SIDEBAR
+
+------------------------------------ */
+#sidebar {
+  background-color: red;
+  width: 200px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  background: #182a73; }
+
+#sidebar .toggle {
+  text-decoration: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  height: 7.5em;
+  left: 2em;
+  z-index: 10000; }
+
+a {
+  color: #bf4343; }
 
 /*# sourceMappingURL=main.css.map */
