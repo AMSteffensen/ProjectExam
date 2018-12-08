@@ -8,11 +8,16 @@
   display: flex;
   flex-direction: row-reverse;
   min-height: 100vh;
+  justify-content: flex-end;
 }
 
 #main {
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
   flex-grow: 1;
-  flex-shrink: 1;
+  flex-shrink: 0;
+  flex-basis: 100%;
   width: 100%;
 
   >.inner {
@@ -22,17 +27,13 @@
     // vertical-align inline and table-cell elements.
     vertical-align: baseline;
   }
-
-  @media screen and (max-width: 736px) {
-    >.inner>section {
-      padding: 3em 0 1em 0;
-    }
-  }
 }
 
 #masthead {
   display: flex;
   color: $secondary-font-color;
+  justify-content: space-between;
+  position: relative;
 }
 
 // HEADER
@@ -51,9 +52,9 @@
 }
 
 #masthead .icons {
-  text-align: right;
   flex: 1;
-  margin-bottom: 0;
+  padding: 5px;
+  margin: 1em;
 }
 
 ul.icons {
@@ -88,9 +89,6 @@ ul.icons li:last-child {
   border-top: 0;
 }
 
-@media screen and (orientation: portrait) {
-
-}
 #banner {
   display: flex;
     flex-direction: column-reverse;
@@ -100,12 +98,15 @@ ul.icons li:last-child {
 #banner .content {
   flex-grow: 1;
   flex-shrink: 1;
-  width: 50%;
+  width: 100%;
+  padding: 2em 2em;
 }
+
 
 ul.actions {
   display: flex;
   padding-left: 0;
+  list-style-type: none;
 }
 
 ul.actions li {
@@ -133,6 +134,7 @@ ul.actions li {
   object-fit: cover;
   width: 100%;
 }
+
 
 // CARDS
 .card {
@@ -219,15 +221,21 @@ label input {
 
 ------------------------------------ */
 #sidebar {
-  background-color: red;
+  //background-color: red;
   //position: relative;
   //position: fixed;
+ /*  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  flex-direction: column; */
   width: 200px;
   height: 100%;
   top: 0;
   z-index: 1000;
   background: $secondary-color--darker;
 }
+
 
 #sidebar .toggle {
   text-decoration: none;
@@ -238,6 +246,7 @@ label input {
   left: 2em;
   z-index: 10000;
 }
+
 
 
 a {
