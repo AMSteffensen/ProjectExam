@@ -19,7 +19,7 @@ const roadster = 'https://api.spacexdata.com/v3/roadster'; // get current roadst
 const ships = 'https://api.spacexdata.com/v3/ships'; // get ships that is supporting spacex
 
 // get launches from spacex
-function loadInfo(date) {
+function loadInfo() {
     fetch(launches)
         // Convert the results to JSON format
         .then(result => result.json())
@@ -33,6 +33,15 @@ function loadInfo(date) {
 function createInfo(result, date) {
     console.log(result);
     console.log(date);
+    var htmlOutput = document.getElementById('launches');
+    // all launches array
+    var launchYear = [];
+    var allLaunches = result.launch_year;
+}
+
+function getCapsules() {
+    var data = document.getElementById('capsules');
+    fetch
 }
 
 // when cta button clicked, call search function
@@ -44,7 +53,7 @@ function addEventListener() {
 function doSearch(event) {
     event.preventDefault();
     // take users input date
-    var date = document.getElementById('launch-date').value;
+    //var date = document.getElementById('launch-date').value;
     // call load data passing user date input
     loadInfo(date);
 }
