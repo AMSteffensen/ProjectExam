@@ -196,6 +196,11 @@ form input:valid {
   background: rgb(200, 200, 200);
 }
 
+textarea {
+  width: 15em;
+  height: 10em;
+}
+
 .form-control {
   $form-color: #ede4e4;
   border: none;

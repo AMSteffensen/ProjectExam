@@ -34,11 +34,14 @@
         </ul>
       </nav>
     </header>
-
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        </ol>
+    </nav>
     <main id="content" class="site-main" role="main">
       <section>
-
-
         <div class="container">
           <div class="row">
             <div class="col-md-6">
@@ -73,38 +76,41 @@
                       </div>
                       <div class="row">
                         <div class="form-control form-control--phone col-sm-12">
-                           <!-- Phone -->
-                        <label for="tel">Phone Number *</label>
-                        <input type="tel" name="tel" id="tel" placeholder="ex. 12-456-789" />
+                          <!-- Phone -->
+                          <label for="tel">Phone Number *</label>
+                          <input type="tel" name="tel" id="tel" placeholder="ex. 12-456-789" />
                         </div>
                       </div>
                       <div class="row">
-                          <div class="form-control form-control--select col-sm-12">
-                              <fieldset>
-                                  <legend id="select_purpose">
-                                    <label for="subject">Purpose of Your Message</label>
-                                    <select name="subject" id="subject" aria-labelledby="select_purpose purpose_label" required>
-                                      <option>Question</option>
-                                      <option>Complaint</option>
-                                      <option>Website error/bug</option>
-                                      <option>Other</option>
-                                    </select>
-                                  </legend>
-                                </fieldset>
-                           </div>
+                        <div class="form-control form-control--select col-sm-12">
+                          <fieldset>
+                            <legend id="select_purpose">
+                              <label for="subject">Purpose of Your Message</label>
+                              <select name="subject" id="subject" aria-labelledby="select_purpose purpose_label"
+                                required>
+                                <option>Question</option>
+                                <option>Complaint</option>
+                                <option>Website error/bug</option>
+                                <option>Other</option>
+                              </select>
+                            </legend>
+                          </fieldset>
+                        </div>
                       </div>
-
-                     
-                      <!-- Message-->
-                      <li class="textarea">
-                        <label for="message" class="form-control form-control--text">Your Message *</label>
-                        <textarea placeholder="Your Message" name="message" id="message" required></textarea></li>
-                      <li class="form-control form-control--text">
-                        <!-- Based on input show other elements -->
-                        <label for="url">URL</label>
-                        <input type="url" id="url" name="url" aria-describedby="url-note" placeholder="http://www.yourwebsite.com/spesific-page">
-                      </li>
-                      <em class="note" id="url-note">Please provide us the URL for the page with the bug.</em>
+                      <div class="row">
+                        <div class="form-control form-control--text col-sm-6">
+                          <!-- Message-->
+                          <label for="message" class="form-control form-control--text">Your Message *</label>
+                        </div>
+                        <div class="col-sm-12">
+                          <textarea placeholder="Your Message" name="message" id="message" required></textarea>
+                        </div>
+                        <div class="col-sm12">
+                          <!-- Based on input show other elements -->
+                          <!--   <label for="url">URL</label>
+                           <input type="url" id="url" name="url" aria-describedby="url-note" placeholder="http://www.yourwebsite.com/spesific-page"> -->
+                        </div>
+                      </div>
                       <li class="form-control form-control--text">
                         <!-- Are you a human test -->
                         <label for="test">What is 2 + 2? *</label>

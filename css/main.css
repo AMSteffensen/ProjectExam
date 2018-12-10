@@ -304,6 +304,10 @@ label input {
 form input:valid {
   background: #c8c8c8; }
 
+textarea {
+  width: 15em;
+  height: 10em; }
+
 .form-control {
   border: none; }
   .form-control--text {
