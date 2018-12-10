@@ -1,4 +1,4 @@
-
+const info = 'https://api.spacexdata.com/v3/info';
 
 // refer to question 3 before development starts for scope document
 

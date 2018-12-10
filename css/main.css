@@ -40,48 +40,33 @@ p {
   ## GRIDS
 
 ------------------------------------ */
-/* // if no grid support, add page width.
 @supports not (display: grid) {
+  .site {
+    max-width: 50em;
+    margin: 0 auto; } }
+@media screen and (min-width: 600px) {
+  @supports (display: grid) {
     .site {
-        max-width: 50em;
-        margin: 0 auto;
-    }
-}
+      display: grid;
+      grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
+      grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto); }
 
-/* Widescreens ----------- */
-/* @media screen and (min-width: 600px) {
-    @supports (display: grid) {
-      .site {
-        display: grid;
-        grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
-        grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
-      }
-  
-      .site-header,
-      .site-footer {
-        grid-column: span 8;
-      }
-  
-      .site-main {
-        grid-column: 2/6;
-      }
-  
-      .aside {
-        grid-column: 6/8;
-      }
-  
-      .map {
-        grid-column: 2/5;
-        grid-row: 3/4;
-      }
-  
-      .twin:last-of-type {
-        grid-column: 5/8;
-      }
-    }
-  }
-  
-     */
+    .site-header,
+    .site-footer {
+      grid-column: span 8; }
+
+    .site-main {
+      grid-column: 2/6; }
+
+    .aside {
+      grid-column: 6/8; }
+
+    .map {
+      grid-column: 2/5;
+      grid-row: 3/4; }
+
+    .twin:last-of-type {
+      grid-column: 5/8; } } }
 /* ------------------------------------
 
   ## BUTTONS
@@ -236,14 +221,13 @@ ul.icons li:last-child {
 #main > .inner > section:first-type {
   border-top: 0; }
 
-#banner {
+/* #banner {
   display: flex;
-  flex-direction: column-reverse; }
-
+    flex-direction: column-reverse;
+} */
 #banner .content {
   flex-grow: 1;
   flex-shrink: 1;
-  width: 100%;
   padding: 2em 2em; }
 
 ul.actions {
@@ -294,16 +278,22 @@ pre code {
 # HOME PAGE
 
 ------------------------------------ */
+.video-wrapper {
+  position: relative;
+  margin: 1em;
+  text-align: center; }
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0; }
+
 /* ------------------------------------
 
 # CONTACT FORM
 
 ------------------------------------ */
-form ol,
-form ul {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
+form {
+  list-style: none; }
 
 input {
   padding: 0.5em; }
@@ -311,20 +301,28 @@ input {
 label input {
   margin: 1em; }
 
+form input:valid {
+  background: #c8c8c8; }
+
 .form-control {
-  background-color: #ede4e4;
-  clear: both; }
+  border: none; }
   .form-control--text {
     color: #111;
-    font-weight: bold; }
+    font-weight: bold;
+    margin: 5px; }
   .form-control--email {
     color: #111; }
   .form-control--button {
     color: #111;
-    list-style: none; }
+    list-style: none;
+    float: right; }
   .form-control--checkbox {
     color: #111;
     font-size: 1.5rem; }
+  .form-control--lname-error {
+    color: red;
+    display: none;
+    padding: 0px; }
 
 /* ------------------------------------
 
@@ -354,5 +352,13 @@ label input {
 
 a {
   color: #bf4343; }
+
+/* ------------------------------------
+
+# FOOTER
+
+------------------------------------ */
+.site-footer {
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

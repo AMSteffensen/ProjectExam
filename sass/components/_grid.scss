@@ -4,7 +4,7 @@
 
 ------------------------------------ */
 
-/* // if no grid support, add page width.
+
 @supports not (display: grid) {
     .site {
         max-width: 50em;
@@ -12,8 +12,8 @@
     }
 }
 
-/* Widescreens ----------- */
-/* @media screen and (min-width: 600px) {
+
+@media screen and (min-width: 600px) {
     @supports (display: grid) {
       .site {
         display: grid;
@@ -45,6 +45,6 @@
     }
   }
   
-     */
+     
 
  

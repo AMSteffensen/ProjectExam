@@ -1,7 +1,7 @@
 loadLastest();
 
 function loadLastest() {
-	fetch("https://api.spacexdata.com/v2/launches/latest")
+	fetch("https://api.spacexdata.com/v3/launches/latest")
 		.then(function (result) {
 			return result.json();
 		})
@@ -34,7 +34,6 @@ function displayLatestLaunches(launch) {
         <h2>${launch.mission_name}</h2>
         <h3 class="card__title">${launch.rocket.rocket_name}</h3>
         <p class="card__text">${launch.details ? launch.details : 'No details available for this mission.'}</p>
-
         </div>
         `
         

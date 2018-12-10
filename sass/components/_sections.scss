@@ -89,16 +89,15 @@ ul.icons li:last-child {
   border-top: 0;
 }
 
-#banner {
+/* #banner {
   display: flex;
     flex-direction: column-reverse;
-}
+} */
 
 
 #banner .content {
   flex-grow: 1;
   flex-shrink: 1;
-  width: 100%;
   padding: 2em 2em;
 }
 
@@ -163,7 +162,16 @@ pre code {
 
 ------------------------------------ */
 
+.video-wrapper {
+  position: relative;
+  margin: 1em;
+  text-align: center;
+}
 
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+}
 
 /* ------------------------------------
 
@@ -172,31 +180,30 @@ pre code {
 ------------------------------------ */
 
 // Contact us Page
-form ol,
-form ul {
+form {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 input {
-  // styles for input types
   padding: 0.5em;
 }
 
 label input {
-  // styles for checkobses and radio controls
   margin: 1em;
+}
+
+form input:valid {
+  background: rgb(200, 200, 200);
 }
 
 .form-control {
   $form-color: #ede4e4;
-  background-color: $form-color;
-  clear: both;
+  border: none;
 
   &--text {
     color: $body-color;
     font-weight: bold;
+    margin: 5px;
   }
 
   &--email {
@@ -206,11 +213,17 @@ label input {
   &--button {
     color: $body-color;
     list-style: none;
+    float: right;
   }
 
   &--checkbox {
     color: $body-color;
     font-size: $font-size-medium;
+  }
+  &--lname-error {
+    color: red;
+    display:none;
+    padding: 0px;
   }
 }
 
@@ -251,4 +264,15 @@ label input {
 
 a {
   color: #bf4343;
+}
+
+
+/* ------------------------------------
+
+# FOOTER
+
+------------------------------------ */
+
+.site-footer {
+  text-align: center;
 }

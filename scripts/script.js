@@ -46,7 +46,7 @@ function getCapsules() {
 
 // when cta button clicked, call search function
 function addEventListener() {
-    document.getElementById('getLaunches').addEventListener('click', doSearch);
+    //document.getElementById('getLaunches').addEventListener('click', doSearch);
 }
 
 // when cta button clicked, load search result

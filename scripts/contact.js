@@ -1,5 +1,3 @@
-// refer to question 4 before development starts for scope document
-
 // add event listner
 function addEventListener() {
     document.getElementById('submitContact').addEventListener('click', validateFormFields);
@@ -10,8 +8,8 @@ function validateFormFields() {
 
     // check if first name text box is not empty
     function checkFirstName() {
-        var firstNameField = document.getElementById('firstName');
-        var firstNameError = document.getElementById('firstNameError');
+        var firstNameField = document.getElementById('fname');
+        var firstNameError = document.getElementById('fnameError');
             if (firstNameField.value === '') {
                 firstNameError.style.display = "block";
             } else {
@@ -19,19 +17,19 @@ function validateFormFields() {
         }
     }
     
-    // check if last name text box is not empty
+     // check if last name text box is not empty
     function checkLastName() {
-        var lastNameField = document.getElementById('firstName');
+        var lastNameField = document.getElementById('lastNameError');
         var lastNameError = document.getElementById('lastNameError');
             if (lastNameField.value === '') {
                 lastNameError.style.display = "block";
             } else {
                 lastNameError.style.display = "none";
         }
-    }
+    } 
    
     // check and display phone  error message
-    function checkPhoneNumber() {
+    /* function checkPhoneNumber() {
         var phoneField = document.getElementById('phone');
         var phoneError = document.getElementById('phoneError');
         // validate phone number
@@ -41,10 +39,10 @@ function validateFormFields() {
         } else {
             phoneError.style.display = "none";
         }
-    }
+    } */
 
     // check and display email error message
-    function checkEmail() {
+   /*  function checkEmail() {
         var emailField = document.getElementById('email');
         var emailError = document.getElementById('emailError');
         // validate email
@@ -53,7 +51,7 @@ function validateFormFields() {
         } else {
             emailError.style.display = "none";
         }
-    }
+    } */
 
         // call functions
         checkFirstName();
