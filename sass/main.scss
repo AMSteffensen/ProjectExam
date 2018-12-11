@@ -1,9 +1,12 @@
+// Base
+@import "base/variables";
+
 // bootstrap
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-compass/";
 
-// Base
-@import "base/variables";
+
+
 
 /* 
 @import "base/mixins";
