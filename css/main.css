@@ -1,8 +1,6 @@
 @charset "UTF-8";
-/* $primary-color: #03256c;
-
+/* 
 $primary-color--darker: darken($primary-color,5%);
-$secondary-color--darker: darken($secondary-color,15%);
 $body-background: #fff;
 $body-color: #333;
 $primary-font-color: #222222;
@@ -10092,8 +10090,42 @@ readers do not read off random characters that represent icons */
   .section-a .fa {
     font-size: 60px; }
 
-.section-b img {
-  width: 100%; }
+.section-b {
+  background: #182a73;
+  color: #fff;
+  padding: 30px 0; }
+  .section-b img {
+    width: 100%;
+    height: 260px; }
+  .section-b a:link, .section-b a:visited {
+    background: #fff;
+    padding: 12px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; }
+  .section-b a:hover, .section-b a:active {
+    background: #bfb2b2; }
+
+.section-c {
+  padding: 60px 0;
+  text-align: center;
+  background: #03256c;
+  color: #fff; }
+  .section-c .btn-primary {
+    background: #02143a; }
+
+footer {
+  padding: 30px 0;
+  background: #02143a;
+  color: #fff;
+  text-align: center; }
+
+.breadcrumb {
+  margin-bottom: 0;
+  background-color: #02143a; }
+
+.breadcrumb > .active {
+  color: #fff; }
 
 /* #wrapper {
   display: flex;
