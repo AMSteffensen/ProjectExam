@@ -8,21 +8,21 @@ To get a better sense of what our target audience for the application is, we nee
 # Design Checklist
 ## Color
 
-- [ ] Uses consistent colors throughout
-- [ ] Uses non-clashing colors
-- [ ] The color choice makes sense for the business purpose of the site
+- [X] Uses consistent colors throughout
+- [x] Uses non-clashing colors
+- [x] The color choice makes sense for the business purpose of the site
 
 ## Text
 
 - [ ] The text has padding on both sides.
-- [ ] The line-height is 1.5-2.0
+- [x] The line-height is 1.5-2.0
 - [ ] There's padding between paragraphs
 - [ ] If your headings are in all caps, there's increased word spacing
 - [ ] Blocks of text are un-justified
 - [ ] Blocks of text are left-aligned
-- [ ] Sans-serif fonts are used for body text
-- [ ] A maximum of two fonts are used - one decorative or serif and one sans-serif
-- [ ] body text isn't pure black on white
+- [x] Sans-serif fonts are used for body text
+- [x] A maximum of two fonts are used - one decorative or serif and one sans-serif
+- [x] body text isn't pure black on white
 - [ ] body text is 16-18px and is scalable
 
 ## Backgrounds

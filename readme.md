@@ -7,7 +7,7 @@ This project includes my code for my project Exam as a student at Noroff Front-e
 
 - [x] Planning and documentation
 - [x] Design
-- [ ] Programming and implementation
+- [x] Programming and implementation
 - [ ] Testing
 - [ ] Report writing
 

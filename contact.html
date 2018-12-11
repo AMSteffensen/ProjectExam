@@ -35,10 +35,10 @@
       </nav>
     </header>
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Contact</li>
-        </ol>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+      </ol>
     </nav>
     <main id="content" class="site-main" role="main">
       <section>
@@ -52,9 +52,11 @@
                     <form role="form" action="" id="form">
                       <div class="row">
                         <div class="form-control form-control--text col-sm-12">
-                          <label for="fname">First Name *</label>
-                          <input type="text" name="fname" id="fname" required placeholder="First Name">
-                          <label for="fname-error" id="fnameError" class="form-control--error">Wrong Name</label>
+                          <div class="form-group">
+                            <label class="col-md-4" for="fname">First Name *</label>
+                            <input type="text" name="fname" id="fname" required placeholder="First Name">
+                            <label for="fname-error" id="fnameError" class="form-control--error">Wrong Name</label>
+                          </div>
                         </div>
                       </div>
                       <div class="row">

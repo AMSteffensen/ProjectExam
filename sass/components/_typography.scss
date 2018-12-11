@@ -3,12 +3,15 @@
   ## TYPOGRAPHY
 
 ------------------------------------ */
+
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,400,700);
 html {
     color: $primary-font-color;
     font-size: $base-font-size;
 }
 
 body {
+    font-family: $body-font-family;
     color: $body-color;
     font: $body-font-size $body-font-family;
     background: $body-background;
