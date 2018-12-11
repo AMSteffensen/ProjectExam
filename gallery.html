@@ -2,182 +2,177 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="rocket launch space technology adventures exploration ">
-  <meta name="keywords" content="Space, technology, rocket, launches">
-  <meta name="author" content="Andreas Steffensen">
-  <link rel="icon" href="img/ico.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="rocket launch space technology adventures exploration ">
+    <meta name="keywords" content="Space, technology, rocket, launches">
+    <meta name="author" content="Andreas Steffensen">
+    <link rel="icon" href="img/ico.png">
 
-  <title>Home - Rocketlaunch</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <!-- Bootstrap core CSS -->
-  <link href="css/main.css" rel="stylesheet">
+    <title>Home - Rocketlaunch</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-          aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">Rocket Launch</a>
-      </div>
-      <div id="navbar" class="collapse navbar-collapse">
-        <nav role="navigation">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="launches.html">Launches</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://twitter.com/spacex"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.youtube.com/spacex"><i class="fa fa-youtube"></i></a></li>
-            <li><a href="http://instagram.com/spacex"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="http://www.flickr.com/spacexphotos"><i class="fa fa-flickr"></i></a></li>
-          </ul>
-        </nav>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-  </nav>
-  <!-- Breadcrumb -->
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item active" aria-current="page">Home</li>
-    </ol>
-  </nav>
-  <main role="main">
-      <section>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <h1>Contact Us</h1>
-                <div role="form" aria-labelledby="contact">
-                  <fieldset>
-                    <legend id="contact">
-                      <form role="form" action="" id="form">
-                        <div class="row">
-                          <div class="form-control form-control--text col-sm-12">
-                            <div class="form-group">
-                              <label class="col-md-4" for="fname">First Name *</label>
-                              <input type="text" name="fname" id="fname" required placeholder="First Name">
-                              <label for="fname-error" id="fnameError" class="form-control--error">Wrong Name</label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="form-control form-control--text col-sm-12">
-                            <label for="lname">Last Name *</label>
-                            <input type="text" name="lname" id="lname" required placeholder="Last Name">
-                            <label for="lname-error" id="lnameError" class="form-control--lname-error">Wrong Last Name</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="form-control form-control--email col-sm-12">
-                            <label for="email">Email *</label>
-                            <input type="email" name="email" id="email" required aria-describedby="email-note"
-                              placeholder="Email Adress" />
-                          </div>
-                          <em class="note" id="email-note">
-                            We will only use your email to respond to your message.
-                          </em>
-                        </div>
-                        <div class="row">
-                          <div class="form-control form-control--phone col-sm-12">
-                            <!-- Phone -->
-                            <label for="tel">Phone Number *</label>
-                            <input type="tel" name="tel" id="tel" placeholder="ex. 12-456-789" />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="form-control form-control--select col-sm-12">
-                            <fieldset>
-                              <legend id="select_purpose">
-                                <label for="subject">Purpose of Your Message</label>
-                                <select name="subject" id="subject" aria-labelledby="select_purpose purpose_label"
-                                  required>
-                                  <option>Question</option>
-                                  <option>Complaint</option>
-                                  <option>Website error/bug</option>
-                                  <option>Other</option>
-                                </select>
-                              </legend>
-                            </fieldset>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="form-control form-control--text col-sm-6">
-                            <!-- Message-->
-                            <label for="message" class="form-control form-control--text">Your Message *</label>
-                          </div>
-                          <div class="col-sm-12">
-                            <textarea placeholder="Your Message" name="message" id="message" required></textarea>
-                          </div>
-                          <div class="col-sm12">
-                            <!-- Based on input show other elements -->
-                            <!--   <label for="url">URL</label>
-                             <input type="url" id="url" name="url" aria-describedby="url-note" placeholder="http://www.yourwebsite.com/spesific-page"> -->
-                          </div>
-                        </div>
-                        <li class="form-control form-control--text">
-                          <!-- Are you a human test -->
-                          <label for="test">What is 2 + 2? *</label>
-                          <input id="test" type="number" name="test" pattern="[0-9]*" min="0" max="9" required>
-                        </li>
-                        </ol>
-                      </form>
-                      <!-- SUBMIT FORM-->
-                      <div class="form-control form-control--checkbox">
-                        <label for="newsletter">
-                          <input type="checkbox" name="newsletter value=" yes" id="newsletter">
-                        </label>
-                        <label for="newsletter">Sign me up for the newsletter</label>
-                      </div>
-                      <li class="form-control form-control--button">
-                        <button type="submit" class="button--primary pull-right" id="submitContact">Submit</button>
-                      </li>
-                    </legend>
-                  </fieldset>
-                </div>
-              </div>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Rocket Launch</a>
             </div>
-          </div>
-  </main>
-  <footer>
-    <div class="container">
-      <p>This site is in no part related to SpaceX. <br>Copyright &copy; 2018 SpaceX.</p>
+            <div id="navbar" class="collapse navbar-collapse">
+                <nav role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li class="active"><a href="gallery.html">Gallery</a></li>
+                        <li><a href="launches.html">Launches</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="http://twitter.com/spacex"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/spacex"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="http://instagram.com/spacex"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="http://www.flickr.com/spacexphotos"><i class="fa fa-flickr"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+        </ol>
+    </nav>
+    <!-- Title bar -->
+    <div class="title-bar">
+        <div class="container">
+            <h1>Gallery</h1>
+        </div>
     </div>
-  </footer>
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <main role="main">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Contact Us</h1>
+                        <div role="form" aria-labelledby="contact">
+                            <fieldset>
+                                <legend id="contact">
+                                    <form role="form" action="" id="form">
+                                        <div class="row">
+                                            <div class="form-control form-control--text col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="col-md-4" for="fname">First Name *</label>
+                                                    <input type="text" name="fname" id="fname" required placeholder="First Name">
+                                                    <label for="fname-error" id="fnameError" class="form-control--error">Wrong
+                                                        Name</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-control form-control--text col-sm-12">
+                                                <label for="lname">Last Name *</label>
+                                                <input type="text" name="lname" id="lname" required placeholder="Last Name">
+                                                <label for="lname-error" id="lnameError" class="form-control--lname-error">Wrong
+                                                    Last Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-control form-control--email col-sm-12">
+                                                <label for="email">Email *</label>
+                                                <input type="email" name="email" id="email" required aria-describedby="email-note"
+                                                    placeholder="Email Adress" />
+                                            </div>
+                                            <em class="note" id="email-note">
+                                                We will only use your email to respond to your message.
+                                            </em>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-control form-control--phone col-sm-12">
+                                                <!-- Phone -->
+                                                <label for="tel">Phone Number *</label>
+                                                <input type="tel" name="tel" id="tel" placeholder="ex. 12-456-789" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-control form-control--select col-sm-12">
+                                                <fieldset>
+                                                    <legend id="select_purpose">
+                                                        <label for="subject">Purpose of Your Message</label>
+                                                        <select name="subject" id="subject" aria-labelledby="select_purpose purpose_label"
+                                                            required>
+                                                            <option>Question</option>
+                                                            <option>Complaint</option>
+                                                            <option>Website error/bug</option>
+                                                            <option>Other</option>
+                                                        </select>
+                                                    </legend>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-control form-control--text col-sm-6">
+                                                <!-- Message-->
+                                                <label for="message" class="form-control form-control--text">Your
+                                                    Message *</label>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <textarea placeholder="Your Message" name="message" id="message"
+                                                    required></textarea>
+                                            </div>
+                                            <div class="col-sm12">
+                                                <!-- Based on input show other elements -->
+                                                <!--   <label for="url">URL</label>
+                             <input type="url" id="url" name="url" aria-describedby="url-note" placeholder="http://www.yourwebsite.com/spesific-page"> -->
+                                            </div>
+                                        </div>
+                                        <li class="form-control form-control--text">
+                                            <!-- Are you a human test -->
+                                            <label for="test">What is 2 + 2? *</label>
+                                            <input id="test" type="number" name="test" pattern="[0-9]*" min="0" max="9"
+                                                required>
+                                        </li>
+                                        </ol>
+                                    </form>
+                                    <!-- SUBMIT FORM-->
+                                    <div class="form-control form-control--checkbox">
+                                        <label for="newsletter">
+                                            <input type="checkbox" name="newsletter value=" yes" id="newsletter">
+                                        </label>
+                                        <label for="newsletter">Sign me up for the newsletter</label>
+                                    </div>
+                                    <li class="form-control form-control--button">
+                                        <button type="submit" class="button--primary pull-right" id="submitContact">Submit</button>
+                                    </li>
+                                </legend>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>This site is in no part related to SpaceX. <br>Copyright &copy; 2018 SpaceX.</p>
+        </div>
+    </footer>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  

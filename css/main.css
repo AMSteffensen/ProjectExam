@@ -10000,6 +10000,12 @@ readers do not read off random characters that represent icons */
   .navbar .navbar .fa {
     font-size: 18px; }
 
+.breadcrumb .breadcrumb-item a {
+  color: #8d9bab;
+  text-decoration: none; }
+.breadcrumb:hover {
+  background: #182a73; }
+
 /* #menu-toggle {
   display: none;  
 }

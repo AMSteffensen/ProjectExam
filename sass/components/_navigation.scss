@@ -3,12 +3,26 @@
   ## NAVIGATION
 
 ------------------------------------ */
-.navbar{
+.navbar {
   margin-bottom: 0;
-  .navbar .fa{
+
+  .navbar .fa {
     font-size: 18px;
   }
 }
+
+.breadcrumb {
+  .breadcrumb-item a {
+    color: #8d9bab;
+    text-decoration: none;
+  }
+  &:hover {
+    background: $secondary-color--darker;
+  }
+}
+
+
+
 
 
 /* #menu-toggle {
