@@ -1,12 +1,12 @@
+
 // Base
 @import "base/variables";
 
 // bootstrap
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-compass/";
-
-
-
+$fa-font-path: "../bower_components/fontawesome/webfonts/";
+@import "../bower_components/fontawesome/scss/fontawesome";
 
 /* 
 @import "base/mixins";
