@@ -9992,6 +9992,358 @@ readers do not read off random characters that represent icons */
   position: static;
   width: auto; }
 
+/* ------------------------------------
+
+  ## NAVIGATION
+
+------------------------------------ */
+.navbar {
+  margin-bottom: 0; }
+  .navbar .navbar .fa {
+    font-size: 18px; }
+
+/* #menu-toggle {
+  display: none;  
+}
+#menu {
+  display: none;
+}
+
+#menu-toggle:checked + #menu {
+  display: flex;
+}
+
+#main-navigation {
+  .fas { font-size: 30px;}
+}
+
+.nav {
+  list-style-type: none;
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  list-style: none;
+
+ 
+  .nav__item {
+    a {
+      display: block;
+      padding: 1em;
+      background: $secondary-color;
+      color: $secondary-font-color;
+      text-decoration: none;
+      border-right: 1px solid $primary-color--darker;
+      &:hover {
+        background: $secondary-color--darker;
+      }
+    }
+  } // li
+
+  @media (min-width: 48em) {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      position: relative;
+      text-align: center;
+      flex: 1;
+    }
+    #toggle {
+      display:none;
+    }
+  } 
+}
+
+.nav__item {
+  flex-grow: 1;
+}
+
+.nav__link {
+  font-size: 1.5rem;
+  display: block;
+  padding: 1em;
+  text-align: center;
+  color: $secondary-font-color;
+} 
+ */
+/* ------------------------------------
+
+  # SECTIONS
+
+------------------------------------ */
+.showcase {
+  background: url(../img/showcase.jpg) no-repeat; }
+
+/* #wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: 100vh;
+  justify-content: flex-end;
+}
+
+#main {
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  width: 100%;
+
+  >.inner {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    // vertical-align inline and table-cell elements.
+    vertical-align: baseline;
+  }
+}
+
+#masthead {
+  display: flex;
+  color: $secondary-font-color;
+  justify-content: space-between;
+  position: relative;
+}
+
+// HEADER
+.site-header {
+  background: $primary-color;
+  border-bottom: solid 5px #bf4343;
+  padding: 2em;
+}
+
+#masthead .logo {
+  color: inherit;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+#masthead .icons {
+  flex: 1;
+  padding: 5px;
+  margin: 1em;
+}
+
+ul.icons {
+  list-style: none;
+}
+
+ul.icons li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+}
+
+ul.icons li .fab {
+  color: inherit;
+}
+
+.fab {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+
+.fab>.label {
+  display: none;
+}
+
+ul.icons li:last-child {
+  padding-right: 0;
+}
+
+// Banner
+#main>.inner>section:first-type {
+  border-top: 0;
+}
+
+/* #banner {
+  display: flex;
+    flex-direction: column-reverse;
+} */
+/*
+#banner .content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 2em 2em;
+}
+
+
+ul.actions {
+  display: flex;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+ul.actions li {
+  padding: 0 0 0 1em;
+  vertical-align: middle;
+}
+
+#banner .image {
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: block;
+  margin: 0 0 2em 4em;
+  width: 50%;
+}
+
+.image {
+  border-radius: 0.375em;
+  border: 0;
+  display: inline-block;
+  position: relative;
+}
+
+#banner .image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+*/
+/*
+// CARDS
+.card {
+  max-width: 360px;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0.3rem;
+}
+
+pre code {
+  background-color: #333;
+  font-family: monospace;
+  background-color: #333;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+  color: white;
+}
+*/
+/* ------------------------------------
+
+# HOME PAGE
+
+------------------------------------ */
+/*
+.video-wrapper {
+  position: relative;
+  margin: 1em;
+  text-align: center;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+}
+
+*/
+/* ------------------------------------
+
+# CONTACT FORM
+
+------------------------------------ */
+/*
+// Contact us Page
+form {
+  list-style: none;
+}
+
+input {
+  padding: 0.5em;
+}
+
+label input {
+  margin: 1em;
+}
+
+form input:valid {
+  background: rgb(200, 200, 200);
+}
+
+textarea {
+  width: 15em;
+  height: 10em;
+}
+
+.form-control {
+  $form-color: #ede4e4;
+  border: none;
+
+  &--text {
+    color: $body-color;
+    font-weight: bold;
+    margin: 5px;
+  }
+
+  &--email {
+    color: $body-color;
+  }
+
+  &--button {
+    color: $body-color;
+    list-style: none;
+    float: right;
+  }
+
+  &--checkbox {
+    color: $body-color;
+    font-size: $font-size-medium;
+  }
+  &--lname-error {
+    color: red;
+    display:none;
+    padding: 0px;
+  }
+}
+*/
+/* ------------------------------------
+
+# SIDEBAR
+
+------------------------------------ */
+/* 
+#sidebar {
+  //background-color: red;
+  //position: relative;
+  //position: fixed;
+   display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  flex-direction: column; 
+  width: 200px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  background: $secondary-color--darker;
+}
+
+
+#sidebar .toggle {
+  text-decoration: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  height: 7.5em;
+  left: 2em;
+  z-index: 10000;
+}
+
+
+
+a {
+  color: #bf4343;
+}
+*/
+/* ------------------------------------
+
+# FOOTER
+
+------------------------------------ */
 /* 
 @import "base/mixins";
 @import "base/reset";
@@ -10000,8 +10352,6 @@ readers do not read off random characters that represent icons */
 @import "components/typography";
 @import "components/grid";
 @import "components/buttons";
-@import "components/navigation";
-@import "components/sections";
  */
 
 /*# sourceMappingURL=main.css.map */

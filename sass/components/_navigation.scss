@@ -3,7 +3,15 @@
   ## NAVIGATION
 
 ------------------------------------ */
-#menu-toggle {
+.navbar{
+  margin-bottom: 0;
+  .navbar .fa{
+    font-size: 18px;
+  }
+}
+
+
+/* #menu-toggle {
   display: none;  
 }
 #menu {
@@ -66,3 +74,4 @@
   text-align: center;
   color: $secondary-font-color;
 } 
+ */
