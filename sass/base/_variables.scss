@@ -4,11 +4,14 @@
 //== Custom
 
 $primary-color: #03256c;
+$secondary-color: #2541b2;
 $secondary-font-color: #fff;
+
+$icon-size: 60px;
 
 
 /* $primary-color: #03256c;
-$secondary-color: #2541b2;
+
 $primary-color--darker: darken($primary-color,5%);
 $secondary-color--darker: darken($secondary-color,15%);
 $body-background: #fff;
@@ -41,7 +44,7 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
+$brand-primary:         $primary-color !default; // #337ab7
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
@@ -175,7 +178,7 @@ $table-border-color:            #ddd !default;
 
 $btn-font-weight:                normal !default;
 
-$btn-default-color:              #333 !default;
+$btn-default-color:              rgb(187, 93, 93) !default;
 $btn-default-bg:                 #fff !default;
 $btn-default-border:             #ccc !default;
 

@@ -1,5 +1,6 @@
 // Base
 @import "base/variables";
+@import "functions/textcolor";
 
 // bootstrap
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/";
@@ -10,7 +11,7 @@ $fa-font-path: "../bower_components/fontawesome/webfonts/";
 // components
 @import "components/navigation";
 @import "components/sections";
-
+@import "components/buttons";
 
 
 
@@ -21,7 +22,7 @@ $fa-font-path: "../bower_components/fontawesome/webfonts/";
 
 @import "components/typography";
 @import "components/grid";
-@import "components/buttons";
+
  */
 
 

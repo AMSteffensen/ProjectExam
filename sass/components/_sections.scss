@@ -5,8 +5,39 @@
 ------------------------------------ */
 .showcase {
   background: url(../img/showcase.jpg) no-repeat;
+  height: 600px;
+  padding: 30px 0;
+  a {
+    color: set-text-color($primary-color) !important;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .container {
+    background: #fff;
+    opacity: 0.7;
+    padding: 20px 30px 30px 30px;
+  }
 }
 
+.section-a {
+  padding: 30px 0;
+  text-align: center;
+  background: $primary-color;
+  color: set-text-color($primary-color);
+
+  .fa{
+    font-size: $icon-size;
+  }
+}
+
+.section-b {
+  img {
+    width: 100%;
+  }
+}
 
 // Flex layout
 /* #wrapper {

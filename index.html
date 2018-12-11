@@ -1,58 +1,108 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link href="css/main.css" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
 
-  <body>
+  <title>Starter Template for Bootstrap</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/main.css" rel="stylesheet">
+</head>
 
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-              <li><a href="http://twitter.com/spacex"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://www.youtube.com/spacex"><i class="fa fa-youtube"></i></a></li>
-              <li><a href="http://instagram.com/spacex"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="http://www.flickr.com/spacexphotos"><i class="fa fa-flickr"></i></a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project name</a>
       </div>
-    </nav>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://twitter.com/spacex"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.youtube.com/spacex"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="http://instagram.com/spacex"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="http://www.flickr.com/spacexphotos"><i class="fa fa-flickr"></i></a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
 
-    <div class="showcase">
-      <div class="container"> 
-        <h1>Rocket Launch</h1>
-        <p class="lead">Rocket Launch is an app for rocket lovers, made by rocket lovers! </p>
-        <a href="launches.html" class="btn btn-primary">Launch!<i class="fa fa-rocket"></i></a>
+  <div class="showcase">
+    <div class="container">
+      <h1>Rocket Launch</h1>
+      <p class="lead">Rocket Launch is an app for rocket lovers, made by rocket lovers! </p>
+      <a href="launches.html" class="btn btn-primary">Launch!<i class="fa fa-rocket"></i></a>
+    </div>
+  </div>
+
+  <div class="section-a">
+    <div class="container">
+      <div class="row">
+        <h2>Next rocket Launch</h2>
+        <div class="col-md-4">
+          <i class="fa fa-backward"></i>
+          <h3>Previous</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet veritatis nihil incidunt voluptatibus ipsam, alias tempora voluptatum ea rem animi!</p>
+        </div>
+        <div class="col-md-4">
+            <i class="fa caret-circle-down"></i>
+            <h3>More Info</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet veritatis nihil incidunt voluptatibus ipsam, alias tempora voluptatum ea rem animi!</p>
+        </div>
+        <div class="col-md-4">
+            <i class="fa fa-forward"></i>
+            <h3>Next</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet veritatis nihil incidunt voluptatibus ipsam, alias tempora voluptatum ea rem animi!</p>
+        </div>
       </div>
     </div>
-   
+  </div>
 
-  </body>
+  <div class="section-b">
+      <div class="container">
+        <div class="row">
+          <h2>Lastest news</h2>
+          <div class="col-md-4">
+            <h2>Dragon v2</h2>
+            
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/rocket.jpg" alt="rocket launching into space">
+                <div class="card-body">
+                  <p class="card-text">SpaceX just launched a rocket into space..</p>
+                  <a href="news.html">Read More</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <h2>Hyperspace</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet veritatis nihil incidunt voluptatibus ipsam, alias tempora voluptatum ea rem animi!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+</body>
+
 </html>
