@@ -6,45 +6,44 @@
 
 
 @supports not (display: grid) {
-    .site {
-        max-width: 50em;
-        margin: 0 auto;
-    }
+  .site {
+      max-width: 50em;
+      margin: 0 auto;
+  }
 }
 
 
 @media screen and (min-width: 600px) {
-    @supports (display: grid) {
-      .site {
-        display: grid;
-        grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
-        grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
-      }
-  
-      .site-header,
-      .site-footer {
-        grid-column: span 8;
-      }
-  
-      .site-main {
-        grid-column: 2/6;
-      }
-  
-      .aside {
-        grid-column: 6/8;
-      }
-  
-      .map {
-        grid-column: 2/5;
-        grid-row: 3/4;
-      }
-  
-      .twin:last-of-type {
-        grid-column: 5/8;
-      }
+  @supports (display: grid) {
+    .site {
+      display: grid;
+      grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
+      grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
+    }
+
+    .site-header,
+    .site-footer {
+      grid-column: span 8;
+    }
+
+    .site-main {
+      grid-column: 2/6;
+    }
+
+    .aside {
+      grid-column: 6/8;
+    }
+
+    .map {
+      grid-column: 2/5;
+      grid-row: 3/4;
+    }
+
+    .twin:last-of-type {
+      grid-column: 5/8;
     }
   }
-  
-     
+}
 
- 
+   
+

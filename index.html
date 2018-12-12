@@ -32,30 +32,30 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <nav role="navigation">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="launches.html">Launches</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="http://twitter.com/spacex"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.youtube.com/spacex"><i class="fa fa-youtube"></i></a></li>
-          <li><a href="http://instagram.com/spacex"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="http://www.flickr.com/spacexphotos"><i class="fa fa-flickr"></i></a></li>
-        </ul>
-      </nav>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="launches.html">Launches</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://twitter.com/spacex"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/spacex"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="http://instagram.com/spacex"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="http://www.flickr.com/spacexphotos"><i class="fa fa-flickr"></i></a></li>
+          </ul>
+        </nav>
       </div>
       <!--/.nav-collapse -->
     </div>
   </nav>
   <!-- Breadcrumb -->
   <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item active" aria-current="page">Home</li>
-      </ol>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
   </nav>
   <!-- Banner -->
   <div class="showcase">
@@ -68,80 +68,79 @@
   <main role="main">
     <section>
       <div class="section-a">
-          <div class="container">
-            <div class="row">
-              <h2>Next rocket Launch</h2>
-              <div class="col-md-4">
-                <i class="fa fa-backward"></i>
-                <h3>Previous</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet veritatis nihil incidunt voluptatibus
-                  ipsam, alias tempora voluptatum ea rem animi!</p>
-              </div>
-              <div class="col-md-4">
-                <i class="fa caret-circle-down"></i>
-                <h3>More Info</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet veritatis nihil incidunt voluptatibus
-                  ipsam, alias tempora voluptatum ea rem animi!</p>
-              </div>
-              <div class="col-md-4">
-                <i class="fa fa-forward"></i>
-                <h3>Next</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet veritatis nihil incidunt voluptatibus
-                  ipsam, alias tempora voluptatum ea rem animi!</p>
-              </div>
+        <div class="container">
+          <div class="row">
+            <h2>Next rocket Launch</h2>
+            <div class="col-md-4">
+              <button id="prevButton" class="btn-primary"><i class="fa fa-backward"></i></button>
+              <h3>Previous</h3>
+              <div id="previous-data"></div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet veritatis nihil incidunt voluptatibus
+                ipsam, alias tempora voluptatum ea rem animi!</p>
+            </div>
+            <div class="col-md-4">
+              <p id="flightnumber"></p>
+              <p id="launchyear"></p>
+            </div>
+            <div class="col-md-4">
+              <button id="nextButton" class="btn-primary"><i class="fa fa-forward"></i></button>
+              <h3>Next</h3>
+              
+              <div id="flightnumber"></div>
             </div>
           </div>
         </div>
-      </section>
-      <section>
-        <div class="section-b">
-          <div class="container">
-            <div class="row">
-              <h2>Lastest news</h2>
-              <div class="col-md-6">
-                <h2>Dragon v2</h2>
-      
-                <div class="card">
-                  <img class="card-img-top" src="img/rocket.jpg" alt="rocket launching into space">
-                  <div class="card-body">
-                    <p class="card-text">SpaceX just launched a rocket into space..</p>
-                    <a href="news.html">Read More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <h2>Hyperspace</h2>
-                <div class="card">
-                  <img class="card-img-top" src="img/launched.jpg" alt="rocket launched into space">
-                  <div class="card-body">
-                    <p class="card-text">SpaceX just launched a rocket into space..</p>
-                    <a href="news.html">Read More</a>
-                  </div>
+      </div>
+    </section>
+    <section>
+      <div class="section-b">
+        <div class="container">
+          <div class="row">
+            <h2>Lastest news</h2>
+            <div class="col-md-6">
+              <h2>Dragon v2</h2>
+
+              <div class="card">
+                <img class="card-img-top" src="img/rocket.jpg" alt="rocket launching into space">
+                <div class="card-body">
+                  <p class="card-text">SpaceX just launched a rocket into space..</p>
+                  <a href="news.html">Read More</a>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="section-c">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2">
-                <h2>SIGNUP FOR UPDATES
-                  <h3>Like to now when next
-                    Rocket is launched?</h3>
-                    <hr>
-                    <form>
-                      <input type="text" class="form-control input-lg" placeholder="Enter email">
-                      <br>
-                      <button class="btn btn-primary btn-lg btb-block">Submit</button>
-                    </form>
+            <div class="col-md-6">
+              <h2>Hyperspace</h2>
+              <div class="card">
+                <img class="card-img-top" src="img/launched.jpg" alt="rocket launched into space">
+                <div class="card-body">
+                  <p class="card-text">SpaceX just launched a rocket into space..</p>
+                  <a href="news.html">Read More</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <section>
+      <div class="section-c">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h2>SIGNUP FOR UPDATES
+                <h3>Like to now when next
+                  Rocket is launched?</h3>
+                <hr>
+                <form>
+                  <input type="text" class="form-control input-lg" placeholder="Enter email">
+                  <br>
+                  <button class="btn btn-primary btn-lg btb-block">Submit</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <div class="container">
@@ -150,6 +149,7 @@
   </footer>
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
