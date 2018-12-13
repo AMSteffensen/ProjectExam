@@ -10098,6 +10098,8 @@ readers do not read off random characters that represent icons */
   color: #fff; }
   .section-a .fa {
     font-size: 60px; }
+  .section-a .list-group {
+    list-style: none; }
 
 .section-b {
   background: #182a73;

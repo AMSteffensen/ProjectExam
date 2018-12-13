@@ -5,59 +5,85 @@ const upcomminglaunches = 'https://api.spacexdata.com/v3/launches/upcoming' // r
 const lastestlaunch = 'https://api.spacexdata.com/v3/launches/latest'; // returns the lastest launch
 const nextlaunch = 'https://api.spacexdata.com/v3/launches/next'; // returns the next launch
 
-// get launches from spacex
-function loadInfo() {
-    fetch(launches)
-        // Convert the results to JSON format
-        .then(result => result.json())
-        .then((result) => {
-            createInfo(result, date);
-        })
-        .catch(err => console.log(err))
+// fetch lastest launch
+fetch(lastestlaunch)
+    .then(response => response.json())
+    .then(data => {
+        displaydata(data);
+    })
+    .catch(err => console.log(err));
+
+// display lastest launch data
+function displaydata(data) {
+    document.getElementById("flightnumber").innerHTML = '<p>Flight Number: </p>' + data.flight_number;
+    document.getElementById("launchyear").innerHTML = '<p>Launch Year: </p>' + data.launch_year;
+    document.getElementById("rocketname").innerHTML = '<p>Rocket Name: </p>' + data.rocket.rocket_name;
+
+    // slice youtube link for embeded video
+    var link = data.links.video_link;
+    var link = link.substr(32, 11);
+    console.log(link);
+
+    document.getElementById("contentdiv").innerHTML = `
+    <iframe width="300" height="315" src="https://www.youtube.com/embed/${link}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
 }
 
-
-//EVENT
-var prevButton = document.getElementById('prevButton').addEventListener('click', prevButtonClick);
-
-function prevButtonClick(e) {
-    fetch('https://api.spacexdata.com/v3/launches/past')
-        // Convert the results to JSON format
-        .then(result => result.json())
-        .then((result) => {
-            console.log(result.rocket_name);
-            var output = '';
-            output +=
-                `<div class="card card--light">
-        <p>${result.flight_number}"</p>
-        <h2>${result.launch_year}</h2>
-        `
-            document.getElementById('previous-data').innerHTML = output;
-        })
-        .catch(err => console.log(err));
-}
 
 
 //add button and event listner
 var nextButton = document.getElementById('nextButton').addEventListener('click', nextButtonClick);
 
-// when button is clicked, display data
-function nextButtonClick(data) {
-    
-    /*   document.getElementById("flightnumber").innerHTML = data.flight_number; */
+// when button is clicked, fetch and display new data
+function nextButtonClick() {
+    var header = document.getElementById('launch-header');
+    // remove header
+    header.removeChild(header.firstChild);
+    // make new header
+    header.appendChild(document.createTextNode('Next Launch'));
     // fetch lastest launch
     fetch(nextlaunch)
         .then(response => response.json())
         .then(data => {
-
-    console.log(data.launch_year);
             document.getElementById("flightnumber").innerHTML = '<p>Flight Number: </p>' + data.flight_number;
             document.getElementById("launchyear").innerHTML = '<p>Launch Year: </p>' + data.launch_year;
+            document.getElementById("rocketname").innerHTML = '<p>Rocket Name: </p>' + data.rocket.rocket_name;
+
+            document.getElementById("contentdiv").innerHTML = `
+        <a target="_blank" style="color: #de3737" href="${data.links.reddit_campaign}">Read More on reddit.</a>
+        `;
         })
         .catch(err => console.log(err));
 }
-// get data from spacex
 
-// get buttons
+//add button and event listner
+var nextButton = document.getElementById('prevButton').addEventListener('click', prevButtonClick);
 
-// when prev button is clicked, show lastest launch
+// when button is clicked, fetch and display new data
+function prevButtonClick() {
+    var header = document.getElementById('launch-header');
+    // remove header
+    header.removeChild(header.firstChild);
+    // make new header
+    header.appendChild(document.createTextNode('Previous Launch'));
+
+    // fetch previous launch
+    fetch('https://api.spacexdata.com/v3/launches/71') // make this dynamic
+        .then(response => response.json())
+        .then(data => {
+            // display data
+            document.getElementById("flightnumber").innerHTML = '<p>Flight Number: </p>' + data.flight_number;
+            document.getElementById("launchyear").innerHTML = '<p>Launch Year: </p>' + data.launch_year;
+            document.getElementById("rocketname").innerHTML = '<p>Rocket Name: </p>' + data.rocket.rocket_name;
+
+
+            // slice youtube link for embeded video
+            var link = data.links.video_link;
+            var link = link.substr(32, 11);
+            console.log(link);
+
+            document.getElementById("contentdiv").innerHTML = `
+    <iframe width="300" height="315" src="https://www.youtube.com/embed/${link}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        })
+        .catch(err => console.log(err));
+
+}
