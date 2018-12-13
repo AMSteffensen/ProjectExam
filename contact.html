@@ -77,26 +77,26 @@
                     <div class="panel-body">
                       <form role="form" aria-labelledby="contact" name="form">
                         <div class="form-group">
-                          <label>First Name</label>
-                          <input name="firstName" id="firstName" type="text" class="form-control" placeholder="Enter Name" required>
-                          <div class="validationMsg">
-
+                          <label>First Name *</label>
+                          <input title="required input" name="firstName" id="firstNameField" type="text" class="form-control" placeholder="Enter Name" required>
+                          <span id="firstNameMsg" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name *</label>
+                            <input name="lastName" id="lastNameField" type="text" class="form-control" placeholder="Enter Name" required>
+                            <span id="lastNameMsg" class="text-danger"></span>
                           </div>
+                        <div class="form-group">
+                          <label>Email *</label>
+                          <input name="email" id="emailField" type="text" class="form-control" placeholder="Enter Email" required>
+                          <span id="emailMsg" class="text-danger"></span>
                         </div>
                         <div class="form-group">
-                            <label>Last Name</label>
-                            <input name="lastName" id="lastName" type="text" class="form-control" placeholder="Enter Name" required>
-                          </div>
-                        <div class="form-group">
-                          <label>Email</label>
-                          <input name="email" id="email" type="text" class="form-control" placeholder="Enter Email" required>
-                          <div id="emailError">test</div>
+                          <label>Message *</label>
+                          <textarea name="textarea" id="email" class="form-control" placeholder="Enter Message" pattern="/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/" required></textarea>
+                          <span id="textareaMsg" class="text-danger"></span>
                         </div>
-                        <div class="form-group">
-                          <label>Message</label>
-                          <textarea name="textarea" id="email" class="form-control" placeholder="Enter Message" required></textarea>
-                          <button id="submitContact" type="submit" class="btn btn-default">Submit</button>
-                        </div>
+                        <button id="submitContact" type="submit" class="btn btn-default">Submit</button>
                       </form>
                     </div>
                   </div>

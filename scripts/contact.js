@@ -1,120 +1,56 @@
-document.getElementById('submitContact').addEventListener('click', valdidateForm);
+// add eventlistener on submit button
+function addEventListener() {
+    // on sumbit form run validateForm
+    document.getElementById('submitContact').addEventListener('click', vailidateForm);
+}
 
-function valdidateForm() {
-    var firstName = document.forms["form"]["firstName"].value;
+// validate form on submit
+function vailidateForm() {
+    // Get user input
+    var firstNameField = document.forms["form"]["firstName"].value;
+    var lastNameField = document.forms["form"]["lastName"].value;
+    var textAreaField = document.forms["form"]["textarea"].value;
 
-    if (firstName == null || firstName == "") {
+    // check if name fields are not empty
+    if (firstNameField === null || firstNameField === "") {
+        document.getElementById('firstNameMsg').innerHTML = "Please fill in your First Name";
         return false;
+    } else {
+        firstNameMsg.style.display = "none";
     }
 
-    if (lastName == null || lastname == "") {
-        console.log(2);
+    if (lastNameField === null || lastNameField === "") {
+        document.getElementById('lastNameMsg').innerHTML = "Please fill in the Last Name";
         return false;
+    } else {
+        lastNameMsg.style.display = "none";
     }
 
-    if (email == null || email == "") {
-        console.log(3);
+    if (textAreaField === null || textAreaField === "") {
+        document.getElementById('textareaMsg').innerHTML = "Field cannot be empty.";
         return false;
-    }
-
-    if (textarea == null || textarea == "") {
-        console.log(4);
-        return false;
+    } else {
+        lastNameMsg.style.display = "none";
     }
 
     var emailField = document.getElementById('email');
-    var emailError = document.getElementById('emailError');
-    // validate email
     if (!validateEmail(emailField.value) === true) {
-        emailError.style.display = "block";
+        document.getElementById('emailMsg').innerHTML = "Invalid Email, please try again.";
+        emailMsg.style.display = "block";
     } else {
-        emailError.style.display = "none";
+        emailMsg.style.display = "none";
     }
-
-    function valdidateEmail(email) {
-        var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-        var emailInput = document.getElementById("email");
-        // return boolean result
-        return emailRegex.test(String(emailInput));
-    }
-
 }
 
+function validateEmail(emailField) {
+    // create a pattern to test an email address
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
-
-// add event listner
-/* 
- */
-// valdidate form fields
-/* function validateFormFields() {
-
-    // check if first name text box is not empty
-    function checkFirstName() {
-        var firstNameField = document.getElementById('fname');
-        var firstNameError = document.getElementById('fnameError');
-            if (firstNameField.value === '') {
-                firstNameError.style.display = "block";
-            } else {
-                firstNameError.style.display = "none";
-        }
-    }
-     */
-// check if last name text box is not empty
-/*   function checkLastName() {
-      var lastNameField = document.getElementById('lastNameError');
-      var lastNameError = document.getElementById('lastNameError');
-          if (lastNameField.value === '') {
-              lastNameError.style.display = "block";
-          } else {
-              lastNameError.style.display = "none";
-      }
-  } 
-  */
-// check and display phone  error message
-/* function checkPhoneNumber() {
-    var phoneField = document.getElementById('phone');
-    var phoneError = document.getElementById('phoneError');
-    // validate phone number
-    if (validatePhone(phoneField.value) === false) {
-        console.log(phoneField.value)
-        phoneError.style.display = "block";
-    } else {
-        phoneError.style.display = "none";
-    }
-} */
-
-// check and display email error message
-/*  function checkEmail() {
-     var emailField = document.getElementById('email');
-     var emailError = document.getElementById('emailError');
-     // validate email
-     if (!validateEmail(emailField.value) === true) {
-         emailError.style.display = "block";
-     } else {
-         emailError.style.display = "none";
-     }
- } */
-
-// call functions
-/*    checkFirstName();
-   checkLastName();
-   checkPhoneNumber();
-   checkEmail(); */
-
-
-// validate email textbox
-/* function validatePhone(phone) {
-    var phonePattern = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/gm;
-
-    // return boolean result
-    return phonePattern.test(String(phone));
+    // return a boolean result
+    return emailPattern.test(emailField);
 }
 
-// validate number
-function validatePhone(phone) {
-    var phonePattern = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/gm;
-
-    // return boolean result
-    return phonePattern.test(String(phone));
-}
- */
+(function (event) {
+    addEventListener();
+    event.preventDefault();
+})();
