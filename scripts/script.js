@@ -1,3 +1,9 @@
+// Signup event listner
+function addEventListener() {
+    // on sumbit form run validateForm
+    document.getElementById('signupBtn').addEventListener('click', signupValid);
+}
+
 //URLS
 const launches = 'https://api.spacexdata.com/v3/launches'; // returns all launches
 const pastlaunches = 'https://api.spacexdata.com/v3/launches/past' // returns past launches
@@ -27,8 +33,6 @@ function displaydata(data) {
     document.getElementById("contentdiv").innerHTML = `
     <iframe width="300" height="315" src="https://www.youtube.com/embed/${link}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
 }
-
-
 
 //add button and event listner
 var nextButton = document.getElementById('nextButton').addEventListener('click', nextButtonClick);
@@ -87,3 +91,17 @@ function prevButtonClick() {
         .catch(err => console.log(err));
 
 }
+
+function signupValid() {
+  /*   var emailInput = document.getElementById('emailInput').value;
+
+    if (!emailInput.checkValidity()) {
+        document.getElementById("signupMsg").innerHTML = "Email not valid";
+    } else {
+        document.getElementById("signupMsg").innerHTML = "Sucess!";
+    } */
+}
+
+(function (event) {
+    addEventListener();
+})();

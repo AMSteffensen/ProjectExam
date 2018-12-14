@@ -52,5 +52,4 @@ function validateEmail(emailField) {
 
 (function (event) {
     addEventListener();
-    event.preventDefault();
 })();

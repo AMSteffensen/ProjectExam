@@ -1,15 +1,12 @@
 const info = 'https://api.spacexdata.com/v3/info';
 
-// refer to question 3 before development starts for scope document
+function getData() {
+    fetch(info)
+      .then(result => result.json())
+      .then((res) => {
+        
+      })
 
-function replaceText() {
-    // get text to replace
-    var div = document.getElementById("aboutText");
-    // define regex text string
-    var regex = /Magic/gi;
-    var aboutText = div.innerHTML;
-  
-    div.innerHTML = aboutText.replace(regex, "Something");
   }
   
   function toggleDisplay() {
