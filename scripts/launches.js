@@ -36,7 +36,6 @@ function displayLatestLaunches(launch) {
 	</ul>
 	`
 	document.getElementById('data').innerHTML = data;
-	data.style.color = "blue";
 }
 
 

@@ -1,4 +1,5 @@
-// use JQUERY to fetch and generate image gallery using flickr API
+$(document).ready(function () {
+    // use JQUERY to fetch and generate image gallery using flickr API
 (function () {
     var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
     $.getJSON(flickerAPI, {
@@ -15,5 +16,8 @@
             });
         });
 })();
+  });
+
+
 
 // style gallery with javascript
