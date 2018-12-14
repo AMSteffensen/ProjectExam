@@ -13,19 +13,6 @@ function loadLastest() {
 		});
 }
 
-function loadUpcoming() {
-	fetch("https://api.spacexdata.com/v3/launches/upcoming")
-		.then(function (result) {
-			return result.json();
-		})
-		.then(function (res) {
-			displayUpcomingLaunches(res);
-		})
-		.catch(function (err) {
-			console.log(err);
-		});
-}
-
 function displayLatestLaunches(launch) {
 	var output = '';
     output += 
@@ -39,4 +26,17 @@ function displayLatestLaunches(launch) {
         
 
 	document.getElementById('latest-launch').innerHTML = output;
+
+	var data = '';
+	data += 
+	`
+	<ul class="list-group">
+		<li class="list-group-item"><a target="_blank" href="${launch.links.wikipedia}">Wikipedia</a></li>
+		<li class="list-group-item"><a target="_blank" href="${launch.links.video_link}">YouTube</a></li>
+	</ul>
+	`
+	document.getElementById('data').innerHTML = data;
+	data.style.color = "blue";
 }
+
+
