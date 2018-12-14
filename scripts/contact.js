@@ -52,4 +52,5 @@ function validateEmail(emailField) {
 
 (function (event) {
     addEventListener();
+
 })();
