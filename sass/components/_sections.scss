@@ -28,7 +28,6 @@
 .section-a {
   padding: 30px 0;
   text-align: center;
-  background: $primary-color;
   color: set-text-color($primary-color);
 
   .fa{
@@ -37,6 +36,16 @@
 
   .list-group {
     list-style: none;
+  }
+
+  div {
+    padding: 0.5em;
+  }
+
+  .list-group {
+    list-style: none;
+    color: $primary-color;
+    padding: 1em;
   }
 }
 
@@ -60,6 +69,10 @@
   a:hover, a:active {
     background: rgb(191, 178, 178);
   }
+
+  div {
+    padding: 0.5em;
+  }
 }
 
 .section-c {
@@ -70,6 +83,7 @@
 
   .btn-primary{
     background: darken($primary-color, 10%);
+    margin: 1.5em;
   }
 }
 
@@ -77,6 +91,7 @@
   background: url(../img/showcase.jpg) no-repeat -50px -500px;
   padding-bottom: 10px;
   border-bottom: 4px solid $primary-color;
+  color: set-text-color($primary-color);
 }
 
 .main {

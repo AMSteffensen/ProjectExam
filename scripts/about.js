@@ -1,5 +1,6 @@
 var info = 'https://api.spacexdata.com/v3/info';
 
+// fetch data
 function getData() {
   fetch(info).then(function (result) {
     return result.json();
@@ -11,7 +12,6 @@ function getData() {
 }
 
 function displayData(result) {
-
   var details = document.getElementById('content');
   details.innerHTML += "<span class='list-group-item'><strong>Name:</strong> " + result.name + "</span>"+"<br />";
   details.innerHTML += "<span class='list-group-item'><strong>Founder:</strong>   " + result.founder + "</span>"+"<br />";
@@ -24,25 +24,6 @@ function displayData(result) {
   details.innerHTML += "<span class='list-group-item'><strong>COO:  </strong> " + result.coo + "</span>"+"<br />";
   details.innerHTML += "<span class='list-group-item'><strong>CTO Propulsion:  </strong> " + result.cto_propulsion + "</span>"+"<br />";
   details.innerHTML += "<span class='list-group-item'><strong>Valuation: </strong>  " + result.valuation + "</span>"+"<br />";
-  /* 
- 
-    "cto": "Elon Musk",
-    "coo": "Gwynne Shotwell",
-    "cto_propulsion": "Tom Mueller",
-    "valuation": 27500000000,
-    "headquarters": {
-        "address": "Rocket Road",
-        "city": "Hawthorne",
-        "state": "California"
-    },
-    "links": {
-        "website": "https://www.spacex.com/",
-        "flickr": "https://www.flickr.com/photos/spacex/",
-        "twitter": "https://twitter.com/SpaceX",
-        "elon_twitter": "https://twitter.com/elonmusk"
-    },
-    "summary": "SpaceX designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize space technology, with the ultimate goal of enabling people to live on other planets.
-         */
 }
 
 function displayHistory() {

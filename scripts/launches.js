@@ -1,5 +1,6 @@
+// call functions
 loadLastest();
-
+// fetch data
 function loadLastest() {
 	fetch("https://api.spacexdata.com/v3/launches/latest")
 		.then(function (result) {
@@ -14,6 +15,7 @@ function loadLastest() {
 }
 
 function displayLatestLaunches(launch) {
+	// output data card with html
 	var output = '';
     output += 
         `<div class="card card--light">
@@ -26,7 +28,7 @@ function displayLatestLaunches(launch) {
         
 
 	document.getElementById('latest-launch').innerHTML = output;
-
+	// output data card with html
 	var data = '';
 	data += 
 	`
