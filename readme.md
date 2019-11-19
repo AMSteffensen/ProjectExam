@@ -1,6 +1,7 @@
 # Noroff Project Exam
 
-This project includes my code for my project Exam as a student at Noroff Front-end Development [Noroff.no](https//www.noroff.no/)
+This project includes my code for my project Exam as a student at Noroff Front-end Development 
+Hosted at live at: https://work.amsteffensen.no/rocketlaunch/
 
 ## Goals
 --------
